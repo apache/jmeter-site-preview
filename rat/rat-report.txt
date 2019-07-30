@@ -2,14 +2,14 @@
 *****************************************************
 Summary
 -------
-Generated at: 2019-07-30T00:27:52+03:00
+Generated at: 2019-07-30T17:08:13+03:00
 
 Notes: 31
 Binaries: 16
 Archives: 3
-Standards: 1694
+Standards: 1695
 
-Apache Licensed: 1694
+Apache Licensed: 1695
 Generated Documents: 0
 
 JavaDocs are generated, thus a license header is optional.
@@ -174,7 +174,6 @@ Archives:
   N     /Users/vladimirsitnikov/Documents/code/jmeter/lib/junit/readme.txt
   N     /Users/vladimirsitnikov/Documents/code/jmeter/lib/ext/readme.txt
   N     /Users/vladimirsitnikov/Documents/code/jmeter/lib/api/readme.txt
-  N     /Users/vladimirsitnikov/Documents/code/jmeter/lib/doc/readme.txt
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/settings.gradle.kts
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/gradle.properties
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/launcher/build.gradle.kts
@@ -246,6 +245,7 @@ Archives:
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/test/groovy/org/apache/jmeter/report/processor/FieldSampleComparatorSpec.groovy
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/test/groovy/org/apache/jmeter/report/processor/ApdexSummaryConsumerSpec.groovy
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/test/groovy/org/apache/jmeter/services/FileServerSpec.groovy
+  AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/resources/org/apache/jmeter/visualizers/package.html
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/resources/org/apache/jmeter/resources/messages_no.properties
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/resources/org/apache/jmeter/resources/messages_de.properties
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/resources/org/apache/jmeter/resources/messages_fr.properties
@@ -257,9 +257,16 @@ Archives:
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/resources/org/apache/jmeter/resources/messages_es.properties
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/resources/org/apache/jmeter/resources/messages_tr.properties
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/resources/org/apache/jmeter/resources/messages.properties
+  AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/resources/org/apache/jmeter/gui/util/theme/darcula_theme.xml
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/resources/org/apache/jmeter/gui/util/textarea.properties
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/resources/org/apache/jmeter/gui/action/template/templates.dtd
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/resources/org/apache/jmeter/gui/action/schematic.xsl
+  AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/resources/org/apache/jmeter/report/core/package.html
+  AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/resources/org/apache/jmeter/report/config/package.html
+  AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/resources/org/apache/jmeter/report/processor/graph/impl/package.html
+  AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/resources/org/apache/jmeter/report/processor/graph/package.html
+  AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/resources/org/apache/jmeter/report/processor/package.html
+  AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/resources/org/apache/jmeter/report/dashboard/package.html
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/testbeans/TestBeanBeanInfo.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/testbeans/TestBean.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/testbeans/TestBeanHelper.java
@@ -286,7 +293,6 @@ Archives:
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/util/SlowInputStream.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/util/BSFJavaScriptEngine.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/util/PropertiesBasedPrefixResolverForXpath2.java
-  AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/util/BeanShellClient.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/util/CustomX509TrustManager.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/util/keystore/JmeterKeyStore.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/util/ScopePanel.java
@@ -339,7 +345,6 @@ Archives:
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/visualizers/RunningSample.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/visualizers/Printable.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/visualizers/Sample.java
-  AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/visualizers/package.html
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/visualizers/backend/Backend.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/visualizers/ImageVisualizer.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/visualizers/TableSample.java
@@ -444,7 +449,6 @@ Archives:
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/gui/util/JDateField.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/gui/util/JMeterToolBar.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/gui/util/FilePanel.java
-  AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/gui/util/theme/darcula_theme.xml
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/gui/util/JLabeledRadioI18N.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/gui/util/FileDialoger.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/gui/util/TextAreaCellRenderer.java
@@ -561,7 +565,6 @@ Archives:
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/core/SampleException.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/core/CsvSampleReader.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/core/CsvSampleWriter.java
-  AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/core/package.html
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/core/SampleComparator.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/core/SampleMetadata.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/core/SampleWriter.java
@@ -573,7 +576,6 @@ Archives:
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/core/SamplePredicate.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/core/ConvertException.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/config/ConfigurationException.java
-  AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/config/package.html
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/config/SubConfiguration.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/config/GraphConfiguration.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/config/ConfigurationUtils.java
@@ -608,7 +610,6 @@ Archives:
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/processor/graph/impl/ResponseTimeDistributionGraphConsumer.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/processor/graph/impl/CodesPerSecondGraphConsumer.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/processor/graph/impl/ResponseTimeVSRequestGraphConsumer.java
-  AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/processor/graph/impl/package.html
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/processor/graph/impl/ResponseCustomGraphGraphConsumer.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/processor/graph/impl/ResponseTimePercentilesOverTimeGraphConsumer.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/processor/graph/impl/ConnectTimeOverTimeGraphConsumer.java
@@ -622,7 +623,6 @@ Archives:
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/processor/graph/AbstractOverTimeGraphConsumer.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/processor/graph/AbstractSeriesSelector.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/processor/graph/StaticSeriesSelector.java
-  AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/processor/graph/package.html
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/processor/graph/CodeSeriesSelector.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/processor/graph/LatencyValueSelector.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/processor/graph/AbstractVersusRequestsGraphConsumer.java
@@ -641,7 +641,6 @@ Archives:
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/processor/graph/SuccessfulElapsedTimeValueSelector.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/processor/MedianAggregatorFactory.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/processor/AbstractSampleSource.java
-  AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/processor/package.html
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/processor/SumAggregator.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/processor/Top5ErrorsBySamplerConsumer.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/processor/ThresholdSelector.java
@@ -679,7 +678,6 @@ Archives:
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/dashboard/ExportException.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/dashboard/HtmlTemplateExporter.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/dashboard/SamplingStatistic.java
-  AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/dashboard/package.html
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/dashboard/GenerationException.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/dashboard/AbstractDataExporter.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/core/src/main/java/org/apache/jmeter/report/dashboard/JsonExporter.java
@@ -822,6 +820,7 @@ Archives:
   N     /Users/vladimirsitnikov/Documents/code/jmeter/src/licenses/licenses/bootstrap-social/LICENSE
   N     /Users/vladimirsitnikov/Documents/code/jmeter/src/licenses/licenses/flot-axislabels/LICENSE
   N     /Users/vladimirsitnikov/Documents/code/jmeter/src/licenses/licenses/dec/LICENSE
+  N     /Users/vladimirsitnikov/Documents/code/jmeter/src/licenses/licenses/hamcrest-date/LICENSE
   N     /Users/vladimirsitnikov/Documents/code/jmeter/src/licenses/licenses/jcharts-0.7.5/LICENSE
   N     /Users/vladimirsitnikov/Documents/code/jmeter/src/licenses/licenses/jodd/LICENSE
   N     /Users/vladimirsitnikov/Documents/code/jmeter/src/licenses/licenses/openiconlibrary/LICENSE
@@ -1623,6 +1622,7 @@ Archives:
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/functions/src/test/java/org/apache/jmeter/functions/TestEscapeOroRegexpChars.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/functions/src/test/groovy/org/apache/jmeter/functions/ChangeCaseSpec.groovy
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/functions/src/test/groovy/org/apache/jmeter/functions/gui/FunctionHelperSpec.groovy
+  AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/functions/src/main/resources/org/apache/jmeter/functions/package.html
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/functions/src/main/java/org/apache/jmeter/functions/ChangeCase.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/functions/src/main/java/org/apache/jmeter/functions/Groovy.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/functions/src/main/java/org/apache/jmeter/functions/FileRowColContainer.java
@@ -1653,7 +1653,6 @@ Archives:
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/functions/src/main/java/org/apache/jmeter/functions/RandomFromMultipleVars.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/functions/src/main/java/org/apache/jmeter/functions/AbstractHostIPName.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/functions/src/main/java/org/apache/jmeter/functions/DateTimeConvertFunction.java
-  AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/functions/src/main/java/org/apache/jmeter/functions/package.html
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/functions/src/main/java/org/apache/jmeter/functions/SetProperty.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/functions/src/main/java/org/apache/jmeter/functions/TimeFunction.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/functions/src/main/java/org/apache/jmeter/functions/UnEscape.java
@@ -1679,6 +1678,8 @@ Archives:
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/functions/src/main/java/org/apache/jmeter/functions/XPathFileContainer.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/functions/src/main/java/org/apache/jmeter/functions/StringToFile.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/functions/src/main/java/org/apache/jmeter/functions/LogFunction2.java
+  AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/bshclient/build.gradle.kts
+  AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/bshclient/src/main/java/org/apache/jmeter/util/BeanShellClient.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/jorphan/build.gradle.kts
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/jorphan/src/test/java/org/apache/commons/cli/avalon/ClutilTestCase.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/jorphan/src/test/java/org/apache/jorphan/util/TestConverter.java
@@ -1693,8 +1694,8 @@ Archives:
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/jorphan/src/test/java/org/apache/jorphan/collections/PackageTest.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/jorphan/src/test/groovy/org/apache/jorphan/util/ConverterSpec.groovy
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/jorphan/src/test/groovy/org/apache/jorphan/io/TextFileSpec.groovy
+  AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/jorphan/src/main/resources/org/apache/commons/cli/avalon/package.html
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/jorphan/src/main/java/org/apache/commons/cli/avalon/ParserControl.java
-  AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/jorphan/src/main/java/org/apache/commons/cli/avalon/package.html
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/jorphan/src/main/java/org/apache/commons/cli/avalon/CLUtil.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/jorphan/src/main/java/org/apache/commons/cli/avalon/CLOption.java
   AL    /Users/vladimirsitnikov/Documents/code/jmeter/src/jorphan/src/main/java/org/apache/commons/cli/avalon/Token.java
