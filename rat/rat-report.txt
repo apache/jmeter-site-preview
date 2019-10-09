@@ -2,14 +2,14 @@
 *****************************************************
 Summary
 -------
-Generated at: 2019-10-07T20:49:20+01:00
+Generated at: 2019-10-09T17:48:54+03:00
 
 Notes: 35
 Binaries: 10
 Archives: 3
-Standards: 1737
+Standards: 1736
 
-Apache Licensed: 1737
+Apache Licensed: 1736
 Generated Documents: 0
 
 JavaDocs are generated, thus a license header is optional.
@@ -47,7 +47,6 @@ Archives:
   N     /config/LICENSE
   AL    /config/license.header.java
   N     /NOTICE
-  AL    /appveyor.yml
   N     /LICENSE
   AL    /fb-csv.xsl
   AL    /gradle.properties

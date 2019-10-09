@@ -335,7 +335,7 @@ to view the last release notes of version 5.1.1.
       Bug
       63801</a>
     -
-  Add Bolt protocol support for Neo4j database. Contributed by Luanne Misquitta, Nicolas Mervaillie and Aldrin Misquitta</li>
+  Add Bolt protocol support for Neo4j database. Contributed by GraphAware (www.graphaware.com)</li>
 
 </ul>
 
@@ -343,6 +343,13 @@ to view the last release notes of version 5.1.1.
 <h3>Controllers</h3>
 
 <ul>
+    
+<li>
+<a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=63565">
+      Bug
+      63565</a>
+    -
+  If Controller: GC issue with JMeter during the endurance run when using with "Interpret Condition as Variable Expression?" unchecked =&gt; Improve documentation</li>
 
 </ul>
 
@@ -465,42 +472,6 @@ to view the last release notes of version 5.1.1.
 
 <ul>
     
-<li>Updated to httpclient/httpmime 4.5.10 (from 4.5.7)</li>
-    
-<li>Updated to dnsjava 2.1.9 (from 2.1.8)</li>
-    
-<li>Updated to jsoup 1.12.1 (from 1.11.3)</li>
-    
-<li>Updated to rsyntaxtextarea 3.0.4 (from 3.0.2)</li>
-    
-<li>Updated to caffeine 2.8.0 (from 2.6.2)</li>
-    
-<li>Updated to commons-codec 1.13 (from 1.11)</li>
-    
-<li>Updated to commons-lang3 3.9 (from 3.8.1)</li>
-    
-<li>Updated to commons-pool 2.7 (from 2.6)</li>
-    
-<li>Updated to commons-text 1.8 (from 1.6)</li>
-    
-<li>Updated to freemarker 2.3.29 (from 2.3.28)</li>
-    
-<li>Updated to httpcore/httpcore-nio 4.12 (from 4.11)</li>
-    
-<li>Updated to jodd 5.0.13 (from 5.0.6)</li>
-    
-<li>Updated to log4j 2.12.1 (from 2.11.1)</li>
-    
-<li>Updated to ph-commons 9.3.7 (from 9.2.1)</li>
-    
-<li>Updated to ph-css 6.2.0 (from 6.1.1)</li>
-    
-<li>Updated to Mozilla Rhino 1.7.11 (from 1.7.10)</li>
-    
-<li>Updated to Saxon-HE 9.9.1-5 (from 9.9.1-1)</li>
-    
-<li>Updated to slf4j 1.7.28 (from 1.7.25)</li>
-    
 <li>
 <a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=63396">
       Bug
@@ -542,6 +513,56 @@ to view the last release notes of version 5.1.1.
       63355</a>
     -
   View Results Tree: Browser view option is not Available with Java 11, document how to make it available</li>
+    
+<li>
+<a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=62861">
+      Bug
+      62861</a>
+    -
+  Thread Group: Provide ability to configure whether a new iteration is a new user or same user (Would be applied on Cookie Manager, Cache Manager and httpclient.reset_state_on_thread_group_iteration). Contributed by Ubik Load Pack (support at ubikloadpack.com)</li>
+    
+<li>
+<a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=63616">
+      Bug
+      63616</a>
+    -
+  Fix Javadoc: <pre class="source">JMeterContext#getThreadNum()</pre> starts at 0 and not 1. Contributed by Ori Marko (orimarko at gmail.com)</li>
+    
+<li>Updated to httpclient/httpmime 4.5.10 (from 4.5.7)</li>
+    
+<li>Updated to dnsjava 2.1.9 (from 2.1.8)</li>
+    
+<li>Updated to jsoup 1.12.1 (from 1.11.3)</li>
+    
+<li>Updated to rsyntaxtextarea 3.0.4 (from 3.0.2)</li>
+    
+<li>Updated to caffeine 2.8.0 (from 2.6.2)</li>
+    
+<li>Updated to commons-codec 1.13 (from 1.11)</li>
+    
+<li>Updated to commons-lang3 3.9 (from 3.8.1)</li>
+    
+<li>Updated to commons-pool 2.7 (from 2.6)</li>
+    
+<li>Updated to commons-text 1.8 (from 1.6)</li>
+    
+<li>Updated to freemarker 2.3.29 (from 2.3.28)</li>
+    
+<li>Updated to httpcore/httpcore-nio 4.12 (from 4.11)</li>
+    
+<li>Updated to jodd 5.0.13 (from 5.0.6)</li>
+    
+<li>Updated to log4j 2.12.1 (from 2.11.1)</li>
+    
+<li>Updated to ph-commons 9.3.7 (from 9.2.1)</li>
+    
+<li>Updated to ph-css 6.2.0 (from 6.1.1)</li>
+    
+<li>Updated to Mozilla Rhino 1.7.11 (from 1.7.10)</li>
+    
+<li>Updated to Saxon-HE 9.9.1-5 (from 9.9.1-1)</li>
+    
+<li>Updated to slf4j 1.7.28 (from 1.7.25)</li>
 
 </ul>
 
@@ -549,6 +570,16 @@ to view the last release notes of version 5.1.1.
 <h2 class="ch_section" id="Non-functional changes">Non-functional changes</h2>
 
 <ul>
+    
+<li>Migrated from subversion to <a href="https://github.com/apache/jmeter">Git</a>
+</li>
+    
+<li>
+<a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=63630">
+      Bug
+      63630</a>
+    -
+  Switch build from Apache Ant to Gradle</li>
     
 <li>Updated to tika-core and tika-parsers 1.22 (from 1.21)</li>
     
@@ -867,21 +898,21 @@ to view the last release notes of version 5.1.1.
   
 <li>John Bergqvist (John.Bergqvist at diffblue.com)</li>
   
-<li>Franz Schwab (franz.schwab@exasol.com)</li>
+<li>Franz Schwab (franz.schwab at exasol.com)</li>
   
 <li>Graham Russell (graham at ham1.co.uk)</li>
   
 <li>Anass Benomar (anassbenomar at gmail.com)</li>
   
-<li>Jakub Bedn&aacute;&#345; (https://github.com/bednar)</li>
+<li>
+<a href="https://github.com/bednar">Jakub Bedn&aacute;&#345;</a>
+</li>
   
 <li>Pascal Schumacher (pascalschumacher at apache.org)</li>
   
-<li>Luanne Misquitta (https://github.com/luanne)</li>
-  
-<li>Nicolas Mervaillie (https://github.com/nmervaillie)</li>
-  
-<li>Aldrin Misquitta (https://github.com/aldrinm)</li>
+<li>
+<a href="https://graphaware.com/">GraphAware</a>
+</li>
 
 </ul>
 
