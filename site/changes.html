@@ -512,7 +512,8 @@ to view the last release notes of version 5.1.1.
       Bug
       63355</a>
     -
-  View Results Tree: Browser view option is not Available with Java 11, document how to make it available</li>
+  View Results Tree: Browser view option is not Available since Java 11, document how to make it available, see <a href="./usermanual/hints_and_tips.html#browser_renderer_view_results_tree">this</a>
+</li>
     
 <li>
 <a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=62861">
@@ -563,6 +564,10 @@ to view the last release notes of version 5.1.1.
 <li>Updated to Saxon-HE 9.9.1-5 (from 9.9.1-1)</li>
     
 <li>Updated to slf4j 1.7.28 (from 1.7.25)</li>
+    
+<li>Updated to tika-core and tika-parsers 1.22 (from 1.21)</li>
+    
+<li>Updated jackson-annotations, jackson-core and jackson-databind to 2.9.10 (from 2.9.8)</li>
 
 </ul>
 
@@ -580,10 +585,6 @@ to view the last release notes of version 5.1.1.
       63630</a>
     -
   Switch build from Apache Ant to Gradle</li>
-    
-<li>Updated to tika-core and tika-parsers 1.22 (from 1.21)</li>
-    
-<li>Updated jackson-annotations, jackson-core and jackson-databind to 2.9.10 (from 2.9.8)</li>
     
 <li>
 <a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=63529">
@@ -1008,6 +1009,22 @@ The fix is to use JDK9 b65 or later.
 JTable selection with keyboard (<span class="keycombo"><span class="keysym">SHIFT</span>&nbsp;+&nbsp;<span class="keysym">up/down</span></span>) is totally unusable with Java 7 on Mac OSX.
 This is due to a known Java bug <a href="https://bugs.openjdk.java.net/browse/JDK-8025126">JDK-8025126</a>
 The fix is to use JDK 8 b132 or later.
+</li>
+
+
+<li>
+Since Java 11 the JavaScript implementation <a href="https://openjdk.java.net/jeps/335">Nashorn has been deprecated</a>.
+Java will emit the following deprecation warnings, if you are using JavaScript based on Nashorn.
+<pre class="source">
+Warning: Nashorn engine is planned to be removed from a future JDK release
+</pre>
+To silence these warnings, add <span class="code">-Dnashorn.args=--no-deprecation-warning</span> to your Java arguments.
+That can be achieved by setting the enviroment variable <span class="code">JVM_ARGS</span>
+
+<pre class="source">
+export JVM_ARGS="-Dnashorn.args=--no-deprecation-warning"
+</pre>
+
 </li>
 
 </ul>

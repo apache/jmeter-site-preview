@@ -206,7 +206,8 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/apache/jmeter/assertions/AssertionResult.html" title="class in org.apache.jmeter.assertions">AssertionResult</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/apache/jmeter/assertions/XMLSchemaAssertion.html#getResult-org.apache.jmeter.samplers.SampleResult-">getResult</a></span>(<a href="../../../../org/apache/jmeter/samplers/SampleResult.html" title="class in org.apache.jmeter.samplers">SampleResult</a>&nbsp;response)</code>
-<div class="block">getResult</div>
+<div class="block">Returns the AssertionResult object encapsulating information about the
+ success or failure of the assertion.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -350,7 +351,9 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <li class="blockList">
 <h4>getResult</h4>
 <pre>public&nbsp;<a href="../../../../org/apache/jmeter/assertions/AssertionResult.html" title="class in org.apache.jmeter.assertions">AssertionResult</a>&nbsp;getResult(<a href="../../../../org/apache/jmeter/samplers/SampleResult.html" title="class in org.apache.jmeter.samplers">SampleResult</a>&nbsp;response)</pre>
-<div class="block">getResult</div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../org/apache/jmeter/assertions/Assertion.html#getResult-org.apache.jmeter.samplers.SampleResult-">Assertion</a></code></span></div>
+<div class="block">Returns the AssertionResult object encapsulating information about the
+ success or failure of the assertion.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../org/apache/jmeter/assertions/Assertion.html#getResult-org.apache.jmeter.samplers.SampleResult-">getResult</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/apache/jmeter/assertions/Assertion.html" title="interface in org.apache.jmeter.assertions">Assertion</a></code></dd>
@@ -369,12 +372,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <ul class="blockList">
 <li class="blockList">
 <h4>setXsdFileName</h4>
-<pre>public&nbsp;void&nbsp;setXsdFileName(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;xmlSchemaFileName)
-                    throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code></dd>
-</dl>
+<pre>public&nbsp;void&nbsp;setXsdFileName(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;xmlSchemaFileName)</pre>
 </li>
 </ul>
 <a name="getXsdFileName--">
