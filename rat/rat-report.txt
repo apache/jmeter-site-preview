@@ -2,14 +2,14 @@
 *****************************************************
 Summary
 -------
-Generated at: 2019-10-29T19:29:25+01:00
+Generated at: 2019-11-12T21:45:15+01:00
 
 Notes: 35
 Binaries: 10
 Archives: 3
-Standards: 1736
+Standards: 1740
 
-Apache Licensed: 1736
+Apache Licensed: 1740
 Generated Documents: 0
 
 JavaDocs are generated, thus a license header is optional.
@@ -30,6 +30,8 @@ Archives:
   Binary files (which do not require any license headers) will be marked B
   Compressed archives will be marked A
   Notices, licenses etc. will be marked N
+  AL    /gradlew.bat
+  AL    /gradlew
   AL    /settings.gradle.kts
   AL    /buildSrc/settings.gradle.kts
   AL    /buildSrc/build.gradle.kts
@@ -1686,6 +1688,7 @@ Archives:
   AL    /gradle/wrapper/gradle-wrapper.properties
   AL    /xdocs/mail2.xml
   AL    /xdocs/devguide-dashboard.xml
+  AL    /xdocs/svnindex.xml
   AL    /xdocs/changes.xml
   AL    /xdocs/jmeter_irc.xml
   AL    /xdocs/building.xml
@@ -1814,5 +1817,6 @@ Archives:
   AL    /bin/user.properties
   AL    /bin/jmeter-t.cmd
   AL    /bin/utility.groovy
+  AL    /doap_JMeter.rdf
  
 *****************************************************
