@@ -39,10 +39,10 @@ caption {color:blue;text-align:left;}
 Table 1: A snapshot summary of this rat report.
 </caption>
 <tr>
-<td colspan="1" class="notes">Notes: 35</td><td colspan="1" class="binaries">Binaries: 10</td><td colspan="1" class="archives">Archives: 3</td><td colspan="1" class="standards">Standards: 1740</td>
+<td colspan="1" class="notes">Notes: 37</td><td colspan="1" class="binaries">Binaries: 10</td><td colspan="1" class="archives">Archives: 3</td><td colspan="1" class="standards">Standards: 1751</td>
 </tr>
 <tr>
-<td colspan="2" class="licenced">Apache Licensed: 1740</td><td colspan="2" class="generated">Generated Documents: 0</td>
+<td colspan="2" class="licenced">Apache Licensed: 1751</td><td colspan="2" class="generated">Generated Documents: 0</td>
 </tr>
 <tr>
 <td colspan="2" class="java_note">Note: JavaDocs are generated and so license header is optional</td><td colspan="2" class="generated_note">Note: Generated files do not require license headers</td>
@@ -102,6 +102,7 @@ Table 1: A snapshot summary of this rat report.
   AL         /src/core/src/test/groovy/org/apache/jmeter/report/processor/ListResultDataSpec.groovy<br>
   AL         /src/core/src/test/groovy/org/apache/jmeter/report/processor/graph/impl/ResponseTimePercentilesOverTimeGraphConsumerSpec.groovy<br>
   AL         /src/core/src/test/groovy/org/apache/jmeter/junit/spock/JMeterSpec.groovy<br>
+  AL         /src/core/src/test/groovy/org/apache/jmeter/engine/util/FunctionParserSpec.groovy<br>
   AL         /src/core/src/test/groovy/org/apache/jmeter/gui/HtmlReportGUISpec.groovy<br>
   AL         /src/core/src/test/java/org/apache/jmeter/samplers/TestSampleResult.java<br>
   AL         /src/core/src/test/java/org/apache/jmeter/samplers/NullSampler.java<br>
@@ -661,6 +662,7 @@ Table 1: A snapshot summary of this rat report.
   AL         /src/core/src/main/java/org/apache/jmeter/gui/action/Copy.java<br>
   AL         /src/core/src/main/java/org/apache/jmeter/gui/SimpleCompoundEdit.java<br>
   AL         /src/core/src/main/java/org/apache/jmeter/gui/HtmlReportUI.java<br>
+  AL         /src/core/src/main/java/org/apache/jmeter/gui/menu/StaticJMeterGUIComponent.java<br>
   AL         /src/core/src/main/java/org/apache/jmeter/gui/MainFrame.java<br>
   AL         /src/core/src/main/java/org/apache/jmeter/gui/GUIMenuSortOrder.java<br>
   AL         /src/core/src/main/java/org/apache/jmeter/gui/OnErrorPanel.java<br>
@@ -673,6 +675,7 @@ Table 1: A snapshot summary of this rat report.
   AL         /src/core/src/main/java/org/apache/jmeter/gui/tree/JMeterTreeNode.java<br>
   AL         /src/core/src/main/java/org/apache/jmeter/gui/AbstractJMeterGuiComponent.java<br>
   AL         /src/core/src/main/java/org/apache/jmeter/gui/UndoHistoryItem.java<br>
+  AL         /src/core/src/main/java/org/apache/jmeter/gui/TestElementMetadata.java<br>
   AL         /src/core/src/main/java/org/apache/jmeter/gui/NamePanel.java<br>
   AL         /src/core/src/main/java/org/apache/jmeter/gui/ClearGui.java<br>
   AL         /src/core/src/main/java/org/apache/jmeter/gui/GlobalUndoableEdit.java<br>
@@ -768,10 +771,17 @@ Table 1: A snapshot summary of this rat report.
   AL         /src/jorphan/src/main/java/org/apache/jorphan/gui/TreeTableModel.java<br>
   AL         /src/jorphan/src/main/java/org/apache/jorphan/gui/AbstractTreeTableModel.java<br>
   AL         /src/jorphan/src/main/java/org/apache/jorphan/gui/layout/VerticalLayout.java<br>
+  AL         /src/jorphan/src/main/java/org/apache/jorphan/gui/ui/TextFieldUIWithUndo.java<br>
+  AL         /src/jorphan/src/main/java/org/apache/jorphan/gui/ui/TextComponentUI.java<br>
+  AL         /src/jorphan/src/main/java/org/apache/jorphan/gui/ui/TextAreaUIWithUndo.java<br>
   AL         /src/jorphan/src/main/java/org/apache/jorphan/gui/GuiUtils.java<br>
+  AL         /src/jorphan/src/main/java/org/apache/jorphan/gui/JMeterUIDefaults.java<br>
+  AL         /src/jorphan/src/main/java/org/apache/jorphan/gui/JFactory.java<br>
   AL         /src/jorphan/src/main/java/org/apache/jorphan/gui/NumberRenderer.java<br>
   AL         /src/jorphan/src/main/java/org/apache/jorphan/gui/ComponentUtil.java<br>
+  AL         /src/jorphan/src/main/java/org/apache/jorphan/gui/DynamicStyle.java<br>
   AL         /src/jorphan/src/main/java/org/apache/jorphan/gui/DefaultTreeTableModel.java<br>
+  AL         /src/jorphan/src/main/java/org/apache/jorphan/gui/FocusActions.java<br>
   AL         /src/jorphan/src/main/java/org/apache/jorphan/gui/RightAlignRenderer.java<br>
   AL         /src/jorphan/src/main/java/org/apache/jorphan/gui/RateRenderer.java<br>
   AL         /src/jorphan/src/main/java/org/apache/jorphan/gui/MinMaxLongRenderer.java<br>
@@ -1695,6 +1705,7 @@ Table 1: A snapshot summary of this rat report.
   N         /src/licenses/licenses/bootstrap/LICENSE<br>
   N         /src/licenses/licenses/miglayout/LICENSE<br>
   N         /src/licenses/licenses/hamcrest/LICENSE<br>
+  N         /src/licenses/licenses/jxlayer/LICENSE<br>
   N         /src/licenses/licenses/datatables-plugins/LICENSE<br>
   N         /src/licenses/licenses/jmespath-core/LICENSE<br>
   N         /src/licenses/licenses/datatables-responsive/LICENSE<br>
@@ -1704,6 +1715,7 @@ Table 1: A snapshot summary of this rat report.
   N         /src/licenses/licenses/metisMenu/LICENSE<br>
   N         /src/licenses/licenses/bootstrap-social/LICENSE<br>
   N         /src/licenses/licenses/openiconlibrary/LICENSE<br>
+  N         /src/licenses/licenses/svgSalamander/LICENSE<br>
   N         /src/licenses/licenses/datatables/LICENSE<br>
   N         /src/licenses/licenses/flot/LICENSE<br>
   N         /src/licenses/licenses/jcharts-0.7.5/LICENSE<br>
@@ -1726,6 +1738,7 @@ Table 1: A snapshot summary of this rat report.
   AL         /xdocs/svnindex.xml<br>
   AL         /xdocs/changes.xml<br>
   AL         /xdocs/jmeter_irc.xml<br>
+  AL         /xdocs/.htaccess<br>
   AL         /xdocs/building.xml<br>
   AL         /xdocs/nightly.xml<br>
   AL         /xdocs/demos/BeanShellAssertion.bsh<br>

@@ -2,14 +2,14 @@
 *****************************************************
 Summary
 -------
-Generated at: 2019-11-20T11:30:59+01:00
+Generated at: 2020-05-10T19:57:24+00:00
 
-Notes: 35
+Notes: 37
 Binaries: 10
 Archives: 3
-Standards: 1740
+Standards: 1751
 
-Apache Licensed: 1740
+Apache Licensed: 1751
 Generated Documents: 0
 
 JavaDocs are generated, thus a license header is optional.
@@ -67,6 +67,7 @@ Archives:
   AL    /src/core/src/test/groovy/org/apache/jmeter/report/processor/ListResultDataSpec.groovy
   AL    /src/core/src/test/groovy/org/apache/jmeter/report/processor/graph/impl/ResponseTimePercentilesOverTimeGraphConsumerSpec.groovy
   AL    /src/core/src/test/groovy/org/apache/jmeter/junit/spock/JMeterSpec.groovy
+  AL    /src/core/src/test/groovy/org/apache/jmeter/engine/util/FunctionParserSpec.groovy
   AL    /src/core/src/test/groovy/org/apache/jmeter/gui/HtmlReportGUISpec.groovy
   AL    /src/core/src/test/java/org/apache/jmeter/samplers/TestSampleResult.java
   AL    /src/core/src/test/java/org/apache/jmeter/samplers/NullSampler.java
@@ -626,6 +627,7 @@ Archives:
   AL    /src/core/src/main/java/org/apache/jmeter/gui/action/Copy.java
   AL    /src/core/src/main/java/org/apache/jmeter/gui/SimpleCompoundEdit.java
   AL    /src/core/src/main/java/org/apache/jmeter/gui/HtmlReportUI.java
+  AL    /src/core/src/main/java/org/apache/jmeter/gui/menu/StaticJMeterGUIComponent.java
   AL    /src/core/src/main/java/org/apache/jmeter/gui/MainFrame.java
   AL    /src/core/src/main/java/org/apache/jmeter/gui/GUIMenuSortOrder.java
   AL    /src/core/src/main/java/org/apache/jmeter/gui/OnErrorPanel.java
@@ -638,6 +640,7 @@ Archives:
   AL    /src/core/src/main/java/org/apache/jmeter/gui/tree/JMeterTreeNode.java
   AL    /src/core/src/main/java/org/apache/jmeter/gui/AbstractJMeterGuiComponent.java
   AL    /src/core/src/main/java/org/apache/jmeter/gui/UndoHistoryItem.java
+  AL    /src/core/src/main/java/org/apache/jmeter/gui/TestElementMetadata.java
   AL    /src/core/src/main/java/org/apache/jmeter/gui/NamePanel.java
   AL    /src/core/src/main/java/org/apache/jmeter/gui/ClearGui.java
   AL    /src/core/src/main/java/org/apache/jmeter/gui/GlobalUndoableEdit.java
@@ -733,10 +736,17 @@ Archives:
   AL    /src/jorphan/src/main/java/org/apache/jorphan/gui/TreeTableModel.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/gui/AbstractTreeTableModel.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/gui/layout/VerticalLayout.java
+  AL    /src/jorphan/src/main/java/org/apache/jorphan/gui/ui/TextFieldUIWithUndo.java
+  AL    /src/jorphan/src/main/java/org/apache/jorphan/gui/ui/TextComponentUI.java
+  AL    /src/jorphan/src/main/java/org/apache/jorphan/gui/ui/TextAreaUIWithUndo.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/gui/GuiUtils.java
+  AL    /src/jorphan/src/main/java/org/apache/jorphan/gui/JMeterUIDefaults.java
+  AL    /src/jorphan/src/main/java/org/apache/jorphan/gui/JFactory.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/gui/NumberRenderer.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/gui/ComponentUtil.java
+  AL    /src/jorphan/src/main/java/org/apache/jorphan/gui/DynamicStyle.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/gui/DefaultTreeTableModel.java
+  AL    /src/jorphan/src/main/java/org/apache/jorphan/gui/FocusActions.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/gui/RightAlignRenderer.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/gui/RateRenderer.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/gui/MinMaxLongRenderer.java
@@ -1660,6 +1670,7 @@ Archives:
   N     /src/licenses/licenses/bootstrap/LICENSE
   N     /src/licenses/licenses/miglayout/LICENSE
   N     /src/licenses/licenses/hamcrest/LICENSE
+  N     /src/licenses/licenses/jxlayer/LICENSE
   N     /src/licenses/licenses/datatables-plugins/LICENSE
   N     /src/licenses/licenses/jmespath-core/LICENSE
   N     /src/licenses/licenses/datatables-responsive/LICENSE
@@ -1669,6 +1680,7 @@ Archives:
   N     /src/licenses/licenses/metisMenu/LICENSE
   N     /src/licenses/licenses/bootstrap-social/LICENSE
   N     /src/licenses/licenses/openiconlibrary/LICENSE
+  N     /src/licenses/licenses/svgSalamander/LICENSE
   N     /src/licenses/licenses/datatables/LICENSE
   N     /src/licenses/licenses/flot/LICENSE
   N     /src/licenses/licenses/jcharts-0.7.5/LICENSE
@@ -1691,6 +1703,7 @@ Archives:
   AL    /xdocs/svnindex.xml
   AL    /xdocs/changes.xml
   AL    /xdocs/jmeter_irc.xml
+  AL    /xdocs/.htaccess
   AL    /xdocs/building.xml
   AL    /xdocs/nightly.xml
   AL    /xdocs/demos/BeanShellAssertion.bsh
