@@ -2,14 +2,14 @@
 *****************************************************
 Summary
 -------
-Generated at: 2020-05-10T19:57:24+00:00
+Generated at: 2020-11-23T11:08:31+01:00
 
-Notes: 37
+Notes: 38
 Binaries: 10
 Archives: 3
-Standards: 1751
+Standards: 1794
 
-Apache Licensed: 1751
+Apache Licensed: 1794
 Generated Documents: 0
 
 JavaDocs are generated, thus a license header is optional.
@@ -76,6 +76,7 @@ Archives:
   AL    /src/core/src/test/java/org/apache/jmeter/util/JSR223TestElementTest.java
   AL    /src/core/src/test/java/org/apache/jmeter/util/JMeterContextExtension.java
   AL    /src/core/src/test/java/org/apache/jmeter/util/LogRecord.java
+  AL    /src/core/src/test/java/org/apache/jmeter/util/SecurityProviderLoaderTest.java
   AL    /src/core/src/test/java/org/apache/jmeter/util/TestJMeterUtils.java
   AL    /src/core/src/test/java/org/apache/jmeter/util/StringUtilitiesTest.java
   AL    /src/core/src/test/java/org/apache/jmeter/util/PackageTest.java
@@ -127,6 +128,7 @@ Archives:
   AL    /src/core/src/main/resources/org/apache/jmeter/resources/messages_zh_CN.properties
   AL    /src/core/src/main/resources/org/apache/jmeter/resources/messages_fr.properties
   AL    /src/core/src/main/resources/org/apache/jmeter/resources/messages_no.properties
+  AL    /src/core/src/main/resources/org/apache/jmeter/resources/messages_ko.properties
   AL    /src/core/src/main/resources/org/apache/jmeter/resources/messages_ja.properties
   AL    /src/core/src/main/resources/org/apache/jmeter/resources/messages_zh_TW.properties
   AL    /src/core/src/main/resources/org/apache/jmeter/resources/messages_pt_BR.properties
@@ -210,6 +212,7 @@ Archives:
   AL    /src/core/src/main/java/org/apache/jmeter/util/ScopePanel.java
   AL    /src/core/src/main/java/org/apache/jmeter/util/NamedObject.java
   AL    /src/core/src/main/java/org/apache/jmeter/util/BeanShellBeanInfoSupport.java
+  AL    /src/core/src/main/java/org/apache/jmeter/util/SecurityProviderLoader.java
   AL    /src/core/src/main/java/org/apache/jmeter/util/SlowInputStream.java
   AL    /src/core/src/main/java/org/apache/jmeter/util/Document.java
   AL    /src/core/src/main/java/org/apache/jmeter/save/TestResultWrapper.java
@@ -724,8 +727,6 @@ Archives:
   AL    /src/jorphan/src/main/java/org/apache/jorphan/collections/SearchByClass.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/collections/HashTreeTraverser.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/documentation/VisibleForTesting.java
-  AL    /src/jorphan/src/main/java/org/apache/jorphan/logging/LoggingManager.java
-  AL    /src/jorphan/src/main/java/org/apache/jorphan/logging/Slf4jLogkitLogger.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/math/NumberComparator.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/math/StatCalculatorLong.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/math/StatCalculator.java
@@ -799,6 +800,7 @@ Archives:
   AL    /src/components/src/test/groovy/org/apache/jmeter/extractor/json/render/RenderAsJmesPathRendererSpec.groovy
   AL    /src/components/src/test/groovy/org/apache/jmeter/extractor/BoundaryExtractorSpec.groovy
   AL    /src/components/src/test/groovy/org/apache/jmeter/visualizers/backend/influxdb/InfluxdbBackendListenerClientSpec.groovy
+  AL    /src/components/src/test/groovy/org/apache/jmeter/visualizers/backend/influxdb/InfluxDBRawBackendListenerClientSpec.groovy
   AL    /src/components/src/test/groovy/org/apache/jmeter/visualizers/backend/graphite/TextGraphiteMetricsSenderSpec.groovy
   AL    /src/components/src/test/groovy/org/apache/jmeter/visualizers/backend/graphite/PickleGraphiteMetricsSenderSpec.groovy
   AL    /src/components/src/test/groovy/org/apache/jmeter/control/RandomOrderControllerSpec.groovy
@@ -852,6 +854,7 @@ Archives:
   AL    /src/components/src/test/java/org/apache/jmeter/assertions/gui/TestJSONPathAssertionGui.java
   AL    /src/components/src/test/java/org/apache/jmeter/assertions/XPathAssertionTest.java
   AL    /src/components/src/test/java/org/apache/jmeter/assertions/SMIMEAssertionTest.java
+  AL    /src/components/src/main/resources/org/apache/jmeter/sampler/DebugSamplerResources_ko.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/sampler/DebugSamplerResources_pt_BR.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/sampler/DebugSamplerResources_de.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/sampler/DebugSamplerResources_tr.properties
@@ -862,6 +865,8 @@ Archives:
   AL    /src/components/src/main/resources/org/apache/jmeter/timers/SyncTimerResources_pt_BR.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/timers/JSR223TimerResources.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/timers/BSFTimerResources_zh_CN.properties
+  AL    /src/components/src/main/resources/org/apache/jmeter/timers/BSFTimerResources_ko.properties
+  AL    /src/components/src/main/resources/org/apache/jmeter/timers/SyncTimerResources_ko.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/timers/BeanShellTimerResources_de.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/timers/ConstantThroughputTimerResources_ja.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/timers/SyncTimerResources_es.properties
@@ -872,6 +877,7 @@ Archives:
   AL    /src/components/src/main/resources/org/apache/jmeter/timers/poissonarrivals/PreciseThroughputTimerResources.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/timers/poissonarrivals/PreciseThroughputTimerResources_zh_CN.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/timers/poissonarrivals/PreciseThroughputTimerResources_fr.properties
+  AL    /src/components/src/main/resources/org/apache/jmeter/timers/poissonarrivals/PreciseThroughputTimerResources_ko.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/timers/SyncTimerResources_tr.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/timers/BeanShellTimerResources_fr.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/timers/ConstantThroughputTimerResources_es.properties
@@ -887,22 +893,29 @@ Archives:
   AL    /src/components/src/main/resources/org/apache/jmeter/timers/BeanShellTimerResources.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/timers/ConstantThroughputTimerResources_de.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/timers/BSFTimerResources_fr.properties
+  AL    /src/components/src/main/resources/org/apache/jmeter/timers/BeanShellTimerResources_ko.properties
+  AL    /src/components/src/main/resources/org/apache/jmeter/timers/JSR223TimerResources_ko.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/timers/JSR223TimerResources_zh_CN.properties
+  AL    /src/components/src/main/resources/org/apache/jmeter/timers/ConstantThroughputTimerResources_ko.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/timers/BeanShellTimerResources_tr.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/extractor/DebugPostProcessorResources_zh_CN.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/extractor/DebugPostProcessorResources_de.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/extractor/BeanShellPostProcessorResources_pt_BR.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/extractor/BSFPostProcessorResources_pl.properties
+  AL    /src/components/src/main/resources/org/apache/jmeter/extractor/JSR223PostProcessorResources_ko.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/extractor/JSR223PostProcessorResources_zh_CN.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/extractor/DebugPostProcessorResources.properties
+  AL    /src/components/src/main/resources/org/apache/jmeter/extractor/BSFPostProcessorResources_ko.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/extractor/BSFPostProcessorResources.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/extractor/BSFPostProcessorResources_pt_BR.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/extractor/DebugPostProcessorResources_fr.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/extractor/BeanShellPostProcessorResources.properties
+  AL    /src/components/src/main/resources/org/apache/jmeter/extractor/BeanShellPostProcessorResources_ko.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/extractor/BSFPostProcessorResources_zh_CN.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/extractor/BeanShellPostProcessorResources_tr.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/extractor/DebugPostProcessorResources_pt_BR.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/extractor/DebugPostProcessorResources_tr.properties
+  AL    /src/components/src/main/resources/org/apache/jmeter/extractor/DebugPostProcessorResources_ko.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/extractor/BeanShellPostProcessorResources_de.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/extractor/BeanShellPostProcessorResources_pl.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/extractor/BeanShellPostProcessorResources_zh_CN.properties
@@ -917,6 +930,7 @@ Archives:
   AL    /src/components/src/main/resources/org/apache/jmeter/config/RandomVariableConfigResources.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/config/CSVDataSetResources_pt_BR.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/config/CSVDataSetResources_zh_CN.properties
+  AL    /src/components/src/main/resources/org/apache/jmeter/config/CSVDataSetResources_ko.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/config/RandomVariableConfigResources_pt_BR.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/config/RandomVariableConfigResources_es.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/config/CSVDataSetResources_es.properties
@@ -925,15 +939,20 @@ Archives:
   AL    /src/components/src/main/resources/org/apache/jmeter/config/CSVDataSetResources_zh_TW.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/config/RandomVariableConfigResources_zh_CN.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/config/CSVDataSetResources.properties
+  AL    /src/components/src/main/resources/org/apache/jmeter/config/KeystoreConfigResources_ko.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/config/CSVDataSetResources_fr.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/config/RandomVariableConfigResources_pl.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/config/CSVDataSetResources_tr.properties
+  AL    /src/components/src/main/resources/org/apache/jmeter/config/RandomVariableConfigResources_ko.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/visualizers/BSFListenerResources_zh_CN.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/visualizers/BeanShellListenerResources_pt_BR.properties
+  AL    /src/components/src/main/resources/org/apache/jmeter/visualizers/JSR223ListenerResources_ko.properties
+  AL    /src/components/src/main/resources/org/apache/jmeter/visualizers/BeanShellListenerResources_ko.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/visualizers/BSFListenerResources_fr.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/visualizers/utils/colors.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/visualizers/BeanShellListenerResources_tr.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/visualizers/BSFListenerResources_pt_BR.properties
+  AL    /src/components/src/main/resources/org/apache/jmeter/visualizers/BSFListenerResources_ko.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/visualizers/BeanShellListenerResources.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/visualizers/JSR223ListenerResources_fr.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/visualizers/BeanShellListenerResources_de.properties
@@ -942,7 +961,9 @@ Archives:
   AL    /src/components/src/main/resources/org/apache/jmeter/visualizers/JSR223ListenerResources.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/visualizers/BSFListenerResources.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/visualizers/BeanShellListenerResources_zh_CN.properties
+  AL    /src/components/src/main/resources/org/apache/jmeter/modifiers/BeanShellPreProcessorResources_ko.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/modifiers/JSR223PreProcessorResources.properties
+  AL    /src/components/src/main/resources/org/apache/jmeter/modifiers/BSFPreProcessorResources_ko.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/modifiers/BeanShellPreProcessorResources_fr.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/modifiers/BeanShellPreProcessorResources_zh_CN.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/modifiers/BeanShellPreProcessorResources_pt_BR.properties
@@ -955,7 +976,10 @@ Archives:
   AL    /src/components/src/main/resources/org/apache/jmeter/modifiers/BSFPreProcessorResources.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/modifiers/BeanShellPreProcessorResources.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/modifiers/BeanShellPreProcessorResources_de.properties
+  AL    /src/components/src/main/resources/org/apache/jmeter/modifiers/JSR223PreProcessorResources_ko.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/assertions/BSFAssertionResources_zh_CN.properties
+  AL    /src/components/src/main/resources/org/apache/jmeter/assertions/CompareAssertionResources_ko.properties
+  AL    /src/components/src/main/resources/org/apache/jmeter/assertions/JSR223AssertionResources_ko.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/assertions/JSR223AssertionResources.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/assertions/BSFAssertionResources_pl.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/assertions/CompareAssertionResources_zh_CN.properties
@@ -965,6 +989,7 @@ Archives:
   AL    /src/components/src/main/resources/org/apache/jmeter/assertions/BSFAssertionResources_fr.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/assertions/BSFAssertionResources.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/assertions/CompareAssertionResources_fr.properties
+  AL    /src/components/src/main/resources/org/apache/jmeter/assertions/BSFAssertionResources_ko.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/assertions/JSR223AssertionResources_zh_CN.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/assertions/CompareAssertionResources.properties
   AL    /src/components/src/main/java/org/apache/jmeter/validation/ComponentTreeClonerForValidation.java
@@ -1012,7 +1037,6 @@ Archives:
   AL    /src/components/src/main/java/org/apache/jmeter/extractor/json/jmespath/JMESPathExtractor.java
   AL    /src/components/src/main/java/org/apache/jmeter/extractor/json/jmespath/JMESPathCache.java
   AL    /src/components/src/main/java/org/apache/jmeter/extractor/json/jmespath/gui/JMESPathExtractorGui.java
-  AL    /src/components/src/main/java/org/apache/jmeter/extractor/json/jmespath/JMESPathCacheLoader.java
   AL    /src/components/src/main/java/org/apache/jmeter/extractor/json/jsonpath/JSONManager.java
   AL    /src/components/src/main/java/org/apache/jmeter/extractor/json/jsonpath/JSONPostProcessor.java
   AL    /src/components/src/main/java/org/apache/jmeter/extractor/json/jsonpath/gui/JSONPostProcessorGui.java
@@ -1072,6 +1096,7 @@ Archives:
   AL    /src/components/src/main/java/org/apache/jmeter/visualizers/backend/influxdb/AbstractInfluxdbMetricsSender.java
   AL    /src/components/src/main/java/org/apache/jmeter/visualizers/backend/influxdb/InfluxdbMetricsSender.java
   AL    /src/components/src/main/java/org/apache/jmeter/visualizers/backend/influxdb/UdpMetricsSender.java
+  AL    /src/components/src/main/java/org/apache/jmeter/visualizers/backend/influxdb/InfluxDBRawBackendListenerClient.java
   AL    /src/components/src/main/java/org/apache/jmeter/visualizers/backend/influxdb/HttpMetricsSender.java
   AL    /src/components/src/main/java/org/apache/jmeter/visualizers/backend/SamplerMetric.java
   AL    /src/components/src/main/java/org/apache/jmeter/visualizers/backend/ErrorMetric.java
@@ -1295,6 +1320,7 @@ Archives:
   AL    /src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/util/accesslog/TestTCLogParser.java
   AL    /src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/util/accesslog/TestLogFilter.java
   AL    /src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/util/accesslog/TestSessionFilter.java
+  AL    /src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/util/TestGraphQLRequestParamUtils.java
   AL    /src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/util/TestHTTPFileArgs.java
   AL    /src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/sampler/NullURLConnection.java
   AL    /src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/sampler/HTTPNullSampler.java
@@ -1339,12 +1365,15 @@ Archives:
   AL    /src/protocol/http/src/test/java/org/apache/jmeter/curl/BasicCurlParserTest.java
   AL    /src/protocol/http/src/test/java/org/apache/jmeter/gui/action/ParseCurlCommandActionTest.java
   AL    /src/protocol/http/src/test/java/org/apache/jmeter/testelement/TestHeaderManager.java
+  AL    /src/protocol/http/src/main/resources/org/apache/jmeter/protocol/http/sampler/GraphQLHTTPSamplerResources.properties
   AL    /src/protocol/http/src/main/resources/org/apache/jmeter/protocol/http/sampler/AccessLogSamplerResources_zh_TW.properties
+  AL    /src/protocol/http/src/main/resources/org/apache/jmeter/protocol/http/sampler/GraphQLHTTPSamplerResources_ko.properties
   AL    /src/protocol/http/src/main/resources/org/apache/jmeter/protocol/http/sampler/AccessLogSamplerResources_fr.properties
   AL    /src/protocol/http/src/main/resources/org/apache/jmeter/protocol/http/sampler/AccessLogSamplerResources_tr.properties
   AL    /src/protocol/http/src/main/resources/org/apache/jmeter/protocol/http/sampler/AccessLogSamplerResources_pt_BR.properties
   AL    /src/protocol/http/src/main/resources/org/apache/jmeter/protocol/http/sampler/AccessLogSamplerResources.properties
   AL    /src/protocol/http/src/main/resources/org/apache/jmeter/protocol/http/sampler/AccessLogSamplerResources_es.properties
+  AL    /src/protocol/http/src/main/resources/org/apache/jmeter/protocol/http/sampler/AccessLogSamplerResources_ko.properties
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/proxy/FormCharSetFinder.java
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/proxy/DefaultSamplerCreator.java
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/proxy/SamplerCreator.java
@@ -1360,6 +1389,7 @@ Archives:
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/proxy/ServerAliasKeyManager.java
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/api/auth/DigestParameters.java
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/util/EncoderCache.java
+  AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/util/GraphQLRequestParamUtils.java
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/util/HTTPFileArg.java
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/util/ConversionUtils.java
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/util/HTTPConstantsInterface.java
@@ -1419,8 +1449,12 @@ Archives:
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/parser/CssParser.java
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/parser/BaseParser.java
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/parser/CSSParseExceptionCallback.java
+  AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/config/GraphQLRequestParams.java
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/config/gui/HttpDefaultsGui.java
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/config/gui/UrlConfigGui.java
+  AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/config/gui/AbstractValidationTabbedPane.java
+  AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/config/gui/GraphQLUrlConfigGui.java
+  AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/config/gui/UrlConfigDefaults.java
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/config/MultipartUrlConfig.java
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/curl/BasicCurlParser.java
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/visualizers/RequestViewHTTP.java
@@ -1443,6 +1477,7 @@ Archives:
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/control/HeaderManager.java
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/control/HttpMirrorThread.java
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/control/Cookie.java
+  AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/control/gui/GraphQLHTTPSamplerGui.java
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/control/gui/HttpTestSampleGui.java
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/control/gui/RecordController.java
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/control/gui/HttpMirrorControlGui.java
@@ -1464,6 +1499,8 @@ Archives:
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/modifier/URLRewritingModifier.java
   AL    /src/protocol/java/src/test/java/org/apache/jmeter/resources/ResourceKeyUsageTestJava.java
   AL    /src/protocol/java/src/main/resources/org/apache/jmeter/protocol/java/sampler/JSR223SamplerResources_fr.properties
+  AL    /src/protocol/java/src/main/resources/org/apache/jmeter/protocol/java/sampler/JSR223SamplerResources_ko.properties
+  AL    /src/protocol/java/src/main/resources/org/apache/jmeter/protocol/java/sampler/BSFSamplerResources_ko.properties
   AL    /src/protocol/java/src/main/resources/org/apache/jmeter/protocol/java/sampler/JSR223SamplerResources_zh_CN.properties
   AL    /src/protocol/java/src/main/resources/org/apache/jmeter/protocol/java/sampler/BSFSamplerResources_fr.properties
   AL    /src/protocol/java/src/main/resources/org/apache/jmeter/protocol/java/sampler/BSFSamplerResources.properties
@@ -1489,10 +1526,12 @@ Archives:
   AL    /src/protocol/junit/src/main/java/org/apache/jmeter/protocol/java/control/gui/ClassFilter.java
   AL    /src/protocol/junit/src/main/java/org/apache/jmeter/protocol/java/control/gui/JUnitTestSamplerGui.java
   AL    /src/protocol/mongodb/src/test/java/org/apache/jmeter/resources/ResourceKeyUsageTestMongodb.java
+  AL    /src/protocol/mongodb/src/main/resources/org/apache/jmeter/protocol/mongodb/sampler/MongoScriptSamplerResources_ko.properties
   AL    /src/protocol/mongodb/src/main/resources/org/apache/jmeter/protocol/mongodb/sampler/MongoScriptSamplerResources_fr.properties
   AL    /src/protocol/mongodb/src/main/resources/org/apache/jmeter/protocol/mongodb/sampler/MongoScriptSamplerResources.properties
   AL    /src/protocol/mongodb/src/main/resources/org/apache/jmeter/protocol/mongodb/config/MongoSourceElementResources_fr.properties
   AL    /src/protocol/mongodb/src/main/resources/org/apache/jmeter/protocol/mongodb/config/MongoSourceElementResources.properties
+  AL    /src/protocol/mongodb/src/main/resources/org/apache/jmeter/protocol/mongodb/config/MongoSourceElementResources_ko.properties
   AL    /src/protocol/mongodb/src/main/java/org/apache/jmeter/protocol/mongodb/sampler/MongoScriptSampler.java
   AL    /src/protocol/mongodb/src/main/java/org/apache/jmeter/protocol/mongodb/sampler/MongoScriptSamplerBeanInfo.java
   AL    /src/protocol/mongodb/src/main/java/org/apache/jmeter/protocol/mongodb/sampler/MongoScriptRunner.java
@@ -1600,6 +1639,7 @@ Archives:
   AL    /src/protocol/jdbc/src/main/resources/org/apache/jmeter/protocol/jdbc/sampler/JDBCSamplerResources_zh_TW.properties
   AL    /src/protocol/jdbc/src/main/resources/org/apache/jmeter/protocol/jdbc/sampler/JDBCSamplerResources.properties
   AL    /src/protocol/jdbc/src/main/resources/org/apache/jmeter/protocol/jdbc/sampler/JDBCSamplerResources_pt_BR.properties
+  AL    /src/protocol/jdbc/src/main/resources/org/apache/jmeter/protocol/jdbc/sampler/JDBCSamplerResources_ko.properties
   AL    /src/protocol/jdbc/src/main/resources/org/apache/jmeter/protocol/jdbc/sampler/JDBCSamplerResources_fr.properties
   AL    /src/protocol/jdbc/src/main/resources/org/apache/jmeter/protocol/jdbc/sampler/JDBCSamplerResources_tr.properties
   AL    /src/protocol/jdbc/src/main/resources/org/apache/jmeter/protocol/jdbc/config/DataSourceElementResources_tr.properties
@@ -1607,11 +1647,14 @@ Archives:
   AL    /src/protocol/jdbc/src/main/resources/org/apache/jmeter/protocol/jdbc/config/DataSourceElementResources_pt_BR.properties
   AL    /src/protocol/jdbc/src/main/resources/org/apache/jmeter/protocol/jdbc/config/DataSourceElementResources.properties
   AL    /src/protocol/jdbc/src/main/resources/org/apache/jmeter/protocol/jdbc/config/DataSourceElementResources_es.properties
+  AL    /src/protocol/jdbc/src/main/resources/org/apache/jmeter/protocol/jdbc/config/DataSourceElementResources_ko.properties
   AL    /src/protocol/jdbc/src/main/resources/org/apache/jmeter/protocol/jdbc/config/DataSourceElementResources_zh_TW.properties
   AL    /src/protocol/jdbc/src/main/resources/org/apache/jmeter/protocol/jdbc/processor/JDBCPostProcessorResources_fr.properties
   AL    /src/protocol/jdbc/src/main/resources/org/apache/jmeter/protocol/jdbc/processor/JDBCPreProcessorResources.properties
   AL    /src/protocol/jdbc/src/main/resources/org/apache/jmeter/protocol/jdbc/processor/JDBCPostProcessorResources_zh_CN.properties
   AL    /src/protocol/jdbc/src/main/resources/org/apache/jmeter/protocol/jdbc/processor/JDBCPostProcessorResources.properties
+  AL    /src/protocol/jdbc/src/main/resources/org/apache/jmeter/protocol/jdbc/processor/JDBCPostProcessorResources_ko.properties
+  AL    /src/protocol/jdbc/src/main/resources/org/apache/jmeter/protocol/jdbc/processor/JDBCPreProcessorResources_ko.properties
   AL    /src/protocol/jdbc/src/main/resources/org/apache/jmeter/protocol/jdbc/processor/JDBCPreProcessorResources_zh_CN.properties
   AL    /src/protocol/jdbc/src/main/resources/org/apache/jmeter/protocol/jdbc/processor/JDBCPreProcessorResources_fr.properties
   AL    /src/protocol/jdbc/src/main/java/org/apache/jmeter/protocol/jdbc/sampler/JDBCSamplerBeanInfo.java
@@ -1686,6 +1729,7 @@ Archives:
   N     /src/licenses/licenses/jcharts-0.7.5/LICENSE
   N     /src/licenses/licenses/xmlpull/LICENSE.txt
   N     /src/licenses/licenses/asm/LICENSE
+  N     /src/licenses/licenses/reactive-streams/LICENSE
   N     /src/licenses/licenses/xpp3_min-1.1.4c/LICENSE.txt
   N     /src/licenses/licenses/jodd/LICENSE
   N     /src/licenses/licenses/xstream/LICENSE
