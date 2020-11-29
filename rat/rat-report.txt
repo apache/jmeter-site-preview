@@ -2,14 +2,14 @@
 *****************************************************
 Summary
 -------
-Generated at: 2020-11-23T11:08:31+01:00
+Generated at: 2020-11-29T17:22:37+01:00
 
 Notes: 38
 Binaries: 10
 Archives: 3
-Standards: 1794
+Standards: 1796
 
-Apache Licensed: 1794
+Apache Licensed: 1796
 Generated Documents: 0
 
 JavaDocs are generated, thus a license header is optional.
@@ -727,6 +727,8 @@ Archives:
   AL    /src/jorphan/src/main/java/org/apache/jorphan/collections/SearchByClass.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/collections/HashTreeTraverser.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/documentation/VisibleForTesting.java
+  AL    /src/jorphan/src/main/java/org/apache/jorphan/logging/LoggingManager.java
+  AL    /src/jorphan/src/main/java/org/apache/jorphan/logging/Slf4jLogkitLogger.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/math/NumberComparator.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/math/StatCalculatorLong.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/math/StatCalculator.java

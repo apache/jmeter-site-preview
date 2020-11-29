@@ -266,7 +266,10 @@ applications when JMeter is starting up.</p>
 
 <ul>
     
-<li>Remove <span class="code">LoggingManager</span> class (it has been deprecated since JMeter 3.2)</li>
+<li>Remove LogKit logger functionality from some classes. This was intended to completely remove
+      <span class="code">LoggingManager</span> class (it has been deprecated since JMeter 3.2), but as jmeter-plugins
+      depended on it, <span class="code">LoggingManager</span> and our <span class="code">LogKit</span>-adapter will remain for
+      this version (but is still deprecated).</li>
 
 </ul>
 
@@ -336,6 +339,13 @@ applications when JMeter is starting up.</p>
 <h3>Listeners</h3>
 
 <ul>
+    
+<li>
+<a href="https://github.com/apache/jmeter/pull/544">
+      Pull request #544</a>
+    -
+  Add BackendListener that sends "raw" results to InfluxDB. Contributed by Graham Russell
+      (graham at ham1.co.uk)</li>
 
 </ul>
 
@@ -372,6 +382,13 @@ applications when JMeter is starting up.</p>
     -
   Dashboard/HTML Report: Rename <span class="code">KO</span> to <span class="code">FAIL</span>
 </li>
+  
+<li>
+<a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=64936">
+      Bug
+      64936</a>
+    -
+  Increase generate_report_ui.generation_timeout to 5 minutes to handle large performance test</li>
 
 </ul>
 
@@ -495,7 +512,7 @@ applications when JMeter is starting up.</p>
 <a href="https://github.com/apache/jmeter/pull/612">
       Pull request #612</a>
     -
-  Correct typos in <span class="code">README.me</span>. Based on patches by Pooja Chandak (poojachandak002 at gmail.com)</li>
+  Correct typos in <span class="code">README.md</span>. Based on patches by Pooja Chandak (poojachandak002 at gmail.com)</li>
     
 <li>
 <a href="https://github.com/apache/jmeter/pull/613">
@@ -536,6 +553,13 @@ applications when JMeter is starting up.</p>
 <li>Update XStream to 1.4.14 (from 1.4.14.1)</li>
     
 <li>Update Apache commons-dbcp2 to 2.8.0 (from 2.7.0)</li>
+    
+<li>
+<a href="https://github.com/apache/jmeter/pull/635">
+      Pull request #635</a>
+    -
+  Correct some image ratios in the documentation. Patch provided
+      by Vincent Daburon (vdaburon at gmail.com)</li>
 
 </ul>
 
@@ -772,6 +796,13 @@ applications when JMeter is starting up.</p>
       64711</a>
     -
   Textarea Colors are not good in dark modes. Contributed by Jannis Weis</li>
+    
+<li>
+<a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=64935">
+      Bug
+      64935</a>
+    -
+  A broken plugin class should not prevent JMeter from starting</li>
 
 </ul>
 
@@ -787,7 +818,7 @@ applications when JMeter is starting up.</p>
   
 <li>Michael Weidmann (https://github.com/michaelweidmann)</li>
   
-<li>Deng Liming (liming.d.pro at gmail.com&gt;)</li>
+<li>Deng Liming (liming.d.pro at gmail.com)</li>
   
 <li>jmetertea (https://github.com/jmetertea)</li>
   
@@ -812,6 +843,8 @@ applications when JMeter is starting up.</p>
 <li>Woonsan Ko (woonsan at apache.org)</li>
   
 <li>Timo (ASF.Software.Timo at Leefers.eu)</li>
+  
+<li>Graham Russell (graham at ham1.co.uk)</li>
 
 </ul>
 
@@ -915,7 +948,35 @@ export JVM_ARGS="-Dnashorn.args=--no-deprecation-warning"
 
 
 <li>
-With Java 15 the JavaScript implementation <a href="https://openjdk.java.net/jeps/372">Nashorn has been removed</a>. To add back a JSR-223 compatible JavaScript engine, copy <a href="https://github.com/mozilla/rhino/releases/download/Rhino1_7_13_Release/rhino-engine-1.7.13.jar">rhino-engine-1.7.13.jar</a> in <span class="code">$JMETER_HOME/lib/ext</span>.
+With Java 15 the JavaScript implementation <a href="https://openjdk.java.net/jeps/372">Nashorn has been removed</a>. To add back a JSR-223 compatible JavaScript engine you have two options:
+  <dl>
+    
+<dt>Use Mozilla Rhino</dt>
+    
+<dd>Copy <a href="https://github.com/mozilla/rhino/releases/download/Rhino1_7_13_Release/rhino-engine-1.7.13.jar">rhino-engine-1.7.13.jar</a> into <span class="code">$JMETER_HOME/lib/ext</span>.</dd>
+    
+<dt>Use OpenJDK Nashorn</dt>
+    
+<dd>
+      The OpenJDK Nashorn implementation comes as a module. To use it, you will have to download it and add it to the module path. A hacky way to download the version 15.0 and its dependencies and set the module path is outlined below:
+      <pre class="source">
+mkdir lib/modules
+pushd lib/modules
+wget https://repo1.maven.org/maven2/org/openjdk/nashorn/nashorn-core/15.0/nashorn-core-15.0.jar
+wget https://repo1.maven.org/maven2/org/ow2/asm/asm/9.0/asm-9.0.jar
+wget https://repo1.maven.org/maven2/org/ow2/asm/asm-commons/9.0/asm-commons-9.0.jar
+wget https://repo1.maven.org/maven2/org/ow2/asm/asm-util/9.0/asm-util-9.0.jar
+wget https://repo1.maven.org/maven2/org/ow2/asm/asm-tree/9.0/asm-tree-9.0.jar
+wget https://repo1.maven.org/maven2/org/ow2/asm/asm-analysis/9.0/asm-analysis-9.0.jar
+popd
+export JVM_ARGS="--modulepath $PWD/lib/modules"
+./bin/jmeter
+      </pre>
+    
+</dd>
+  
+</dl>
+
 </li>
 
 
