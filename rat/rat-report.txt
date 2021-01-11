@@ -2,14 +2,14 @@
 *****************************************************
 Summary
 -------
-Generated at: 2020-11-29T17:22:37+01:00
+Generated at: 2021-01-11T14:49:23+01:00
 
 Notes: 38
 Binaries: 10
 Archives: 3
-Standards: 1796
+Standards: 1799
 
-Apache Licensed: 1796
+Apache Licensed: 1799
 Generated Documents: 0
 
 JavaDocs are generated, thus a license header is optional.
@@ -1459,6 +1459,9 @@ Archives:
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/config/gui/UrlConfigDefaults.java
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/config/MultipartUrlConfig.java
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/curl/BasicCurlParser.java
+  AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/curl/ArgumentHolder.java
+  AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/curl/FileArgumentHolder.java
+  AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/curl/StringArgumentHolder.java
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/visualizers/RequestViewHTTP.java
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/control/HC4CookieHandler.java
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/control/CookieHandler.java
