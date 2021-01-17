@@ -2,14 +2,14 @@
 *****************************************************
 Summary
 -------
-Generated at: 2021-01-11T14:49:23+01:00
+Generated at: 2021-01-17T13:24:25+01:00
 
 Notes: 38
 Binaries: 10
 Archives: 3
-Standards: 1799
+Standards: 1800
 
-Apache Licensed: 1799
+Apache Licensed: 1800
 Generated Documents: 0
 
 JavaDocs are generated, thus a license header is optional.
@@ -1376,6 +1376,7 @@ Archives:
   AL    /src/protocol/http/src/main/resources/org/apache/jmeter/protocol/http/sampler/AccessLogSamplerResources.properties
   AL    /src/protocol/http/src/main/resources/org/apache/jmeter/protocol/http/sampler/AccessLogSamplerResources_es.properties
   AL    /src/protocol/http/src/main/resources/org/apache/jmeter/protocol/http/sampler/AccessLogSamplerResources_ko.properties
+  AL    /src/protocol/http/src/main/resources/org/apache/jmeter/protocol/http/gui/action/tika-config.xml
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/proxy/FormCharSetFinder.java
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/proxy/DefaultSamplerCreator.java
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/proxy/SamplerCreator.java
