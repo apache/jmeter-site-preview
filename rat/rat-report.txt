@@ -2,14 +2,14 @@
 *****************************************************
 Summary
 -------
-Generated at: 2021-12-23T17:51:25+01:00
+Generated at: 2022-03-12T15:50:03+01:00
 
 Notes: 38
 Binaries: 10
 Archives: 3
-Standards: 1800
+Standards: 1826
 
-Apache Licensed: 1800
+Apache Licensed: 1826
 Generated Documents: 0
 
 JavaDocs are generated, thus a license header is optional.
@@ -369,6 +369,7 @@ Archives:
   AL    /src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/sampler/TestHTTPSamplersAgainstHttpMirrorServer.java
   AL    /src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/sampler/TestHTTPHC4Impl.java
   AL    /src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/sampler/PutWriterTest.java
+  AL    /src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/sampler/TestRedirects.java
   AL    /src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/sampler/ResultAsString.java
   AL    /src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/sampler/TestHttpWebdav.java
   AL    /src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/sampler/SamplingNamingTest.java
@@ -1161,6 +1162,8 @@ Archives:
   AL    /src/jorphan/src/test/groovy/org/apache/jorphan/util/ConverterSpec.groovy
   AL    /src/jorphan/src/test/java/org/apache/commons/cli/avalon/ClutilTestCase.java
   AL    /src/jorphan/src/test/java/org/apache/jorphan/reflect/TestClassTools.java
+  AL    /src/jorphan/src/test/java/org/apache/jorphan/util/TestAlphaNumericKeyComparator.java
+  AL    /src/jorphan/src/test/java/org/apache/jorphan/util/StringWrapTest.java
   AL    /src/jorphan/src/test/java/org/apache/jorphan/util/TestConverter.java
   AL    /src/jorphan/src/test/java/org/apache/jorphan/util/TestJorphanUtils.java
   AL    /src/jorphan/src/test/java/org/apache/jorphan/gui/TableModelEventBacker.java
@@ -1199,9 +1202,12 @@ Archives:
   AL    /src/jorphan/src/main/java/org/apache/jorphan/util/Converter.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/util/JMeterStopThreadException.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/util/JMeterError.java
+  AL    /src/jorphan/src/main/java/org/apache/jorphan/util/StringWrap.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/util/JMeterStopTestException.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/util/ThreadDumper.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/util/JMeterStopTestNowException.java
+  AL    /src/jorphan/src/main/java/org/apache/jorphan/util/AlphaNumericComparator.java
+  AL    /src/jorphan/src/main/java/org/apache/jorphan/util/AlphaNumericKeyComparator.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/gui/DynamicStyle.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/gui/JLabeledPasswordField.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/gui/JTreeTable.java
@@ -1221,7 +1227,10 @@ Archives:
   AL    /src/jorphan/src/main/java/org/apache/jorphan/gui/JLabeledTextArea.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/gui/MinMaxLongRenderer.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/gui/GuiUtils.java
+  AL    /src/jorphan/src/main/java/org/apache/jorphan/gui/ui/DefaultUndoManager.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/gui/ui/TextComponentUI.java
+  AL    /src/jorphan/src/main/java/org/apache/jorphan/gui/ui/AddUndoableEditListenerPropertyChangeListener.java
+  AL    /src/jorphan/src/main/java/org/apache/jorphan/gui/ui/KerningOptimizer.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/gui/ui/TextFieldUIWithUndo.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/gui/ui/TextAreaUIWithUndo.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/gui/MenuScroller.java
@@ -1242,6 +1251,7 @@ Archives:
   AL    /src/jorphan/src/main/java/org/apache/jorphan/exec/KeyToolUtils.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/exec/StreamCopier.java
   AL    /src/core/build.gradle.kts
+  AL    /src/core/src/test/groovy/org/apache/jmeter/testelement/AbstractTestElementSpec.groovy
   AL    /src/core/src/test/groovy/org/apache/jmeter/engine/util/FunctionParserSpec.groovy
   AL    /src/core/src/test/groovy/org/apache/jmeter/util/keystore/JmeterKeyStoreSpec.groovy
   AL    /src/core/src/test/groovy/org/apache/jmeter/services/FileServerSpec.groovy
@@ -1255,6 +1265,11 @@ Archives:
   AL    /src/core/src/test/groovy/org/apache/jmeter/report/core/SampleMetadataParserSpec.groovy
   AL    /src/core/src/test/groovy/org/apache/jmeter/gui/HtmlReportGUISpec.groovy
   AL    /src/core/src/test/groovy/org/apache/jmeter/junit/spock/JMeterSpec.groovy
+  AL    /src/core/src/test/kotlin/org/apache/jmeter/threads/openmodel/PoissonArrivalsRampTest.kt
+  AL    /src/core/src/test/kotlin/org/apache/jmeter/threads/openmodel/EvenArrivalsRampTest.kt
+  AL    /src/core/src/test/kotlin/org/apache/jmeter/threads/openmodel/ThreadScheduleProcessGeneratorTest.kt
+  AL    /src/core/src/test/kotlin/org/apache/jmeter/threads/openmodel/ThreadScheduleTest.kt
+  AL    /src/core/src/test/kotlin/org/apache/jmeter/threads/openmodel/TokenizerTest.kt
   AL    /src/core/src/test/java/org/apache/jmeter/testelement/PackageTest.java
   AL    /src/core/src/test/java/org/apache/jmeter/testelement/TestNumberProperty.java
   AL    /src/core/src/test/java/org/apache/jmeter/testelement/property/AbstractPropertyTest.java
@@ -1332,6 +1347,16 @@ Archives:
   AL    /src/core/src/main/resources/org/apache/jmeter/gui/action/template/templates.dtd
   AL    /src/core/src/main/resources/org/apache/jmeter/gui/action/schematic.xsl
   AL    /src/core/src/main/resources/org/apache/jmeter/visualizers/package.html
+  AL    /src/core/src/main/kotlin/org/apache/jmeter/threads/openmodel/OpenModelThreadGroupController.kt
+  AL    /src/core/src/main/kotlin/org/apache/jmeter/threads/openmodel/OpenModelThreadGroup.kt
+  AL    /src/core/src/main/kotlin/org/apache/jmeter/threads/openmodel/scheduleTokenizer.kt
+  AL    /src/core/src/main/kotlin/org/apache/jmeter/threads/openmodel/gui/OpenModelThreadGroupGui.kt
+  AL    /src/core/src/main/kotlin/org/apache/jmeter/threads/openmodel/gui/TargetRateChart.kt
+  AL    /src/core/src/main/kotlin/org/apache/jmeter/threads/openmodel/PoissonArrivalsRamp.kt
+  AL    /src/core/src/main/kotlin/org/apache/jmeter/threads/openmodel/scheduleParser.kt
+  AL    /src/core/src/main/kotlin/org/apache/jmeter/threads/openmodel/EvenArrivalsRamp.kt
+  AL    /src/core/src/main/kotlin/org/apache/jmeter/threads/openmodel/TimeUnitExtensions.kt
+  AL    /src/core/src/main/kotlin/org/apache/jmeter/threads/openmodel/ThreadScheduleProcessGenerator.kt
   AL    /src/core/src/main/java/org/apache/jmeter/ProxyAuthenticator.java
   AL    /src/core/src/main/java/org/apache/jmeter/testelement/OnErrorTestElement.java
   AL    /src/core/src/main/java/org/apache/jmeter/testelement/TestCloneable.java
@@ -1591,6 +1616,7 @@ Archives:
   AL    /src/core/src/main/java/org/apache/jmeter/report/processor/ApdexSummaryConsumer.java
   AL    /src/core/src/main/java/org/apache/jmeter/report/processor/StatisticsSummaryConsumer.java
   AL    /src/core/src/main/java/org/apache/jmeter/report/processor/AggregatorFactory.java
+  AL    /src/core/src/main/java/org/apache/jmeter/report/processor/DescriptiveStatisticsFactory.java
   AL    /src/core/src/main/java/org/apache/jmeter/report/processor/ResultDataVisitor.java
   AL    /src/core/src/main/java/org/apache/jmeter/report/processor/AbstractSummaryConsumer.java
   AL    /src/core/src/main/java/org/apache/jmeter/report/processor/SampleProducer.java

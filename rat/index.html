@@ -39,10 +39,10 @@ caption {color:blue;text-align:left;}
 Table 1: A snapshot summary of this rat report.
 </caption>
 <tr>
-<td colspan="1" class="notes">Notes: 38</td><td colspan="1" class="binaries">Binaries: 10</td><td colspan="1" class="archives">Archives: 3</td><td colspan="1" class="standards">Standards: 1800</td>
+<td colspan="1" class="notes">Notes: 38</td><td colspan="1" class="binaries">Binaries: 10</td><td colspan="1" class="archives">Archives: 3</td><td colspan="1" class="standards">Standards: 1826</td>
 </tr>
 <tr>
-<td colspan="2" class="licenced">Apache Licensed: 1800</td><td colspan="2" class="generated">Generated Documents: 0</td>
+<td colspan="2" class="licenced">Apache Licensed: 1826</td><td colspan="2" class="generated">Generated Documents: 0</td>
 </tr>
 <tr>
 <td colspan="2" class="java_note">Note: JavaDocs are generated and so license header is optional</td><td colspan="2" class="generated_note">Note: Generated files do not require license headers</td>
@@ -404,6 +404,7 @@ Table 1: A snapshot summary of this rat report.
   AL         /src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/sampler/TestHTTPSamplersAgainstHttpMirrorServer.java<br>
   AL         /src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/sampler/TestHTTPHC4Impl.java<br>
   AL         /src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/sampler/PutWriterTest.java<br>
+  AL         /src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/sampler/TestRedirects.java<br>
   AL         /src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/sampler/ResultAsString.java<br>
   AL         /src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/sampler/TestHttpWebdav.java<br>
   AL         /src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/sampler/SamplingNamingTest.java<br>
@@ -1196,6 +1197,8 @@ Table 1: A snapshot summary of this rat report.
   AL         /src/jorphan/src/test/groovy/org/apache/jorphan/util/ConverterSpec.groovy<br>
   AL         /src/jorphan/src/test/java/org/apache/commons/cli/avalon/ClutilTestCase.java<br>
   AL         /src/jorphan/src/test/java/org/apache/jorphan/reflect/TestClassTools.java<br>
+  AL         /src/jorphan/src/test/java/org/apache/jorphan/util/TestAlphaNumericKeyComparator.java<br>
+  AL         /src/jorphan/src/test/java/org/apache/jorphan/util/StringWrapTest.java<br>
   AL         /src/jorphan/src/test/java/org/apache/jorphan/util/TestConverter.java<br>
   AL         /src/jorphan/src/test/java/org/apache/jorphan/util/TestJorphanUtils.java<br>
   AL         /src/jorphan/src/test/java/org/apache/jorphan/gui/TableModelEventBacker.java<br>
@@ -1234,9 +1237,12 @@ Table 1: A snapshot summary of this rat report.
   AL         /src/jorphan/src/main/java/org/apache/jorphan/util/Converter.java<br>
   AL         /src/jorphan/src/main/java/org/apache/jorphan/util/JMeterStopThreadException.java<br>
   AL         /src/jorphan/src/main/java/org/apache/jorphan/util/JMeterError.java<br>
+  AL         /src/jorphan/src/main/java/org/apache/jorphan/util/StringWrap.java<br>
   AL         /src/jorphan/src/main/java/org/apache/jorphan/util/JMeterStopTestException.java<br>
   AL         /src/jorphan/src/main/java/org/apache/jorphan/util/ThreadDumper.java<br>
   AL         /src/jorphan/src/main/java/org/apache/jorphan/util/JMeterStopTestNowException.java<br>
+  AL         /src/jorphan/src/main/java/org/apache/jorphan/util/AlphaNumericComparator.java<br>
+  AL         /src/jorphan/src/main/java/org/apache/jorphan/util/AlphaNumericKeyComparator.java<br>
   AL         /src/jorphan/src/main/java/org/apache/jorphan/gui/DynamicStyle.java<br>
   AL         /src/jorphan/src/main/java/org/apache/jorphan/gui/JLabeledPasswordField.java<br>
   AL         /src/jorphan/src/main/java/org/apache/jorphan/gui/JTreeTable.java<br>
@@ -1256,7 +1262,10 @@ Table 1: A snapshot summary of this rat report.
   AL         /src/jorphan/src/main/java/org/apache/jorphan/gui/JLabeledTextArea.java<br>
   AL         /src/jorphan/src/main/java/org/apache/jorphan/gui/MinMaxLongRenderer.java<br>
   AL         /src/jorphan/src/main/java/org/apache/jorphan/gui/GuiUtils.java<br>
+  AL         /src/jorphan/src/main/java/org/apache/jorphan/gui/ui/DefaultUndoManager.java<br>
   AL         /src/jorphan/src/main/java/org/apache/jorphan/gui/ui/TextComponentUI.java<br>
+  AL         /src/jorphan/src/main/java/org/apache/jorphan/gui/ui/AddUndoableEditListenerPropertyChangeListener.java<br>
+  AL         /src/jorphan/src/main/java/org/apache/jorphan/gui/ui/KerningOptimizer.java<br>
   AL         /src/jorphan/src/main/java/org/apache/jorphan/gui/ui/TextFieldUIWithUndo.java<br>
   AL         /src/jorphan/src/main/java/org/apache/jorphan/gui/ui/TextAreaUIWithUndo.java<br>
   AL         /src/jorphan/src/main/java/org/apache/jorphan/gui/MenuScroller.java<br>
@@ -1277,6 +1286,7 @@ Table 1: A snapshot summary of this rat report.
   AL         /src/jorphan/src/main/java/org/apache/jorphan/exec/KeyToolUtils.java<br>
   AL         /src/jorphan/src/main/java/org/apache/jorphan/exec/StreamCopier.java<br>
   AL         /src/core/build.gradle.kts<br>
+  AL         /src/core/src/test/groovy/org/apache/jmeter/testelement/AbstractTestElementSpec.groovy<br>
   AL         /src/core/src/test/groovy/org/apache/jmeter/engine/util/FunctionParserSpec.groovy<br>
   AL         /src/core/src/test/groovy/org/apache/jmeter/util/keystore/JmeterKeyStoreSpec.groovy<br>
   AL         /src/core/src/test/groovy/org/apache/jmeter/services/FileServerSpec.groovy<br>
@@ -1290,6 +1300,11 @@ Table 1: A snapshot summary of this rat report.
   AL         /src/core/src/test/groovy/org/apache/jmeter/report/core/SampleMetadataParserSpec.groovy<br>
   AL         /src/core/src/test/groovy/org/apache/jmeter/gui/HtmlReportGUISpec.groovy<br>
   AL         /src/core/src/test/groovy/org/apache/jmeter/junit/spock/JMeterSpec.groovy<br>
+  AL         /src/core/src/test/kotlin/org/apache/jmeter/threads/openmodel/PoissonArrivalsRampTest.kt<br>
+  AL         /src/core/src/test/kotlin/org/apache/jmeter/threads/openmodel/EvenArrivalsRampTest.kt<br>
+  AL         /src/core/src/test/kotlin/org/apache/jmeter/threads/openmodel/ThreadScheduleProcessGeneratorTest.kt<br>
+  AL         /src/core/src/test/kotlin/org/apache/jmeter/threads/openmodel/ThreadScheduleTest.kt<br>
+  AL         /src/core/src/test/kotlin/org/apache/jmeter/threads/openmodel/TokenizerTest.kt<br>
   AL         /src/core/src/test/java/org/apache/jmeter/testelement/PackageTest.java<br>
   AL         /src/core/src/test/java/org/apache/jmeter/testelement/TestNumberProperty.java<br>
   AL         /src/core/src/test/java/org/apache/jmeter/testelement/property/AbstractPropertyTest.java<br>
@@ -1367,6 +1382,16 @@ Table 1: A snapshot summary of this rat report.
   AL         /src/core/src/main/resources/org/apache/jmeter/gui/action/template/templates.dtd<br>
   AL         /src/core/src/main/resources/org/apache/jmeter/gui/action/schematic.xsl<br>
   AL         /src/core/src/main/resources/org/apache/jmeter/visualizers/package.html<br>
+  AL         /src/core/src/main/kotlin/org/apache/jmeter/threads/openmodel/OpenModelThreadGroupController.kt<br>
+  AL         /src/core/src/main/kotlin/org/apache/jmeter/threads/openmodel/OpenModelThreadGroup.kt<br>
+  AL         /src/core/src/main/kotlin/org/apache/jmeter/threads/openmodel/scheduleTokenizer.kt<br>
+  AL         /src/core/src/main/kotlin/org/apache/jmeter/threads/openmodel/gui/OpenModelThreadGroupGui.kt<br>
+  AL         /src/core/src/main/kotlin/org/apache/jmeter/threads/openmodel/gui/TargetRateChart.kt<br>
+  AL         /src/core/src/main/kotlin/org/apache/jmeter/threads/openmodel/PoissonArrivalsRamp.kt<br>
+  AL         /src/core/src/main/kotlin/org/apache/jmeter/threads/openmodel/scheduleParser.kt<br>
+  AL         /src/core/src/main/kotlin/org/apache/jmeter/threads/openmodel/EvenArrivalsRamp.kt<br>
+  AL         /src/core/src/main/kotlin/org/apache/jmeter/threads/openmodel/TimeUnitExtensions.kt<br>
+  AL         /src/core/src/main/kotlin/org/apache/jmeter/threads/openmodel/ThreadScheduleProcessGenerator.kt<br>
   AL         /src/core/src/main/java/org/apache/jmeter/ProxyAuthenticator.java<br>
   AL         /src/core/src/main/java/org/apache/jmeter/testelement/OnErrorTestElement.java<br>
   AL         /src/core/src/main/java/org/apache/jmeter/testelement/TestCloneable.java<br>
@@ -1626,6 +1651,7 @@ Table 1: A snapshot summary of this rat report.
   AL         /src/core/src/main/java/org/apache/jmeter/report/processor/ApdexSummaryConsumer.java<br>
   AL         /src/core/src/main/java/org/apache/jmeter/report/processor/StatisticsSummaryConsumer.java<br>
   AL         /src/core/src/main/java/org/apache/jmeter/report/processor/AggregatorFactory.java<br>
+  AL         /src/core/src/main/java/org/apache/jmeter/report/processor/DescriptiveStatisticsFactory.java<br>
   AL         /src/core/src/main/java/org/apache/jmeter/report/processor/ResultDataVisitor.java<br>
   AL         /src/core/src/main/java/org/apache/jmeter/report/processor/AbstractSummaryConsumer.java<br>
   AL         /src/core/src/main/java/org/apache/jmeter/report/processor/SampleProducer.java<br>
