@@ -4613,6 +4613,20 @@ JMETER-SERVER</pre>
 </div>
 
 <div class="property">
+<div class="name req-true">view.results.tree.simple_view_limit</div>
+<div class="description req-true">
+    Configures maximum document length for text view before switching to a simpler view, that does not do line breaks.<br>
+    Works probably best, when combined with a low setting of <span class="code">view.results.tree.max_line_size</span>.
+    Can be switched off by setting the value to <span class="code">-1</span>.<br>
+    Defaults to: <span class="code">10000</span>
+
+</div>
+<div class="required req-true">
+            No
+          </div>
+</div>
+
+<div class="property">
 <div class="name req-true">document.max_size</div>
 <div class="description req-true">
     Maximum size (in bytes) of Document that can be parsed by Tika engine<br>

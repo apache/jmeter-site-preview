@@ -404,6 +404,14 @@ however, the profile can't be updated while the test is running.
       63061</a>
     -
   Sort View Results in Table in a human expected order</li>
+  
+<li>
+<a href="https://github.com/apache/jmeter/pull/706">
+      Pull request #706</a>
+    -
+  Try to keep UI responsive when displaying large text results. Can be configured with the new property
+      <span class="code">view.results.tree.simple_view_limit</span>
+</li>
 
 </ul>
 
@@ -570,7 +578,7 @@ however, the profile can't be updated while the test is running.
     -
   Hide splash screen when an error is displayed because the test plan could not be parsed.</li>
   
-<li>Updated Groovy to 3.0.9 (from 3.0.7).</li>
+<li>Updated Groovy to 3.0.10 (from 3.0.7).</li>
   
 <li>Updated Darklaf to 2.7.3 (from 2.5.4).</li>
   
@@ -578,7 +586,7 @@ however, the profile can't be updated while the test is running.
   
 <li>Updated Asm to 9.2 (from 9.1).</li>
   
-<li>Updated Bouncycastle to 1.69 (from 1.67).</li>
+<li>Updated Bouncycastle to 1.70 (from 1.67).</li>
   
 <li>Updated Caffeine to 2.9.3 (from 2.8.8).</li>
   
@@ -592,7 +600,7 @@ however, the profile can't be updated while the test is running.
   
 <li>Updated Apache commons-pool2 to 2.11.1 (from 2.9.0).</li>
   
-<li>Updated equalsverifier to 3.9 (from 3.4.2).</li>
+<li>Updated equalsverifier to 3.10 (from 3.4.2).</li>
   
 <li>Updated Apache Freemarker to 2.3.31 (from 2.3.30).</li>
   
@@ -604,7 +612,7 @@ however, the profile can't be updated while the test is running.
   
 <li>Updated jacoco to 0.8.7 (from 0.8.5).</li>
   
-<li>Updated json-path to 2.6.0 (from 2.4.0).</li>
+<li>Updated json-path to 2.7.0 (from 2.4.0).</li>
   
 <li>Updated jsoup to 1.14.3 (from 1.13.1).</li>
   
@@ -614,7 +622,7 @@ however, the profile can't be updated while the test is running.
   
 <li>Updated Miglayout to 5.3 (from 5.2).</li>
   
-<li>Updated Neo4j Java driver to 4.4.4 (from 4.2.0).</li>
+<li>Updated Neo4j Java driver to 4.4.5 (from 4.2.0).</li>
   
 <li>Updated Objenesis to 3.2 (from 2.6).</li>
   
@@ -622,7 +630,7 @@ however, the profile can't be updated while the test is running.
   
 <li>Updated PH CSS and PH commons to 6.5.4 and 10.1.6 (from 6.2.3 and 9.5.1).</li>
   
-<li>Updated RSyntaxTextArea to 3.1.6 (from 3.1.1).</li>
+<li>Updated RSyntaxTextArea to 3.2.0 (from 3.1.1).</li>
   
 <li>Updated SLF4J to 1.7.36 (from 1.7.30).</li>
   
@@ -638,7 +646,7 @@ however, the profile can't be updated while the test is running.
   
 <li>Updated com.github.vlsi.vlsi-release-plugins 1.76 (from 1.74).</li>
   
-<li>Updated jackson to 2.13.1 (from 2.10.5)</li>
+<li>Updated jackson to 2.13.2 (from 2.10.5)</li>
   
 <li>Updated jmespath to 0.5.1</li>
   
@@ -698,6 +706,24 @@ however, the profile can't be updated while the test is running.
       Pull request #697&gt;</a>
     -
   Junit 5 tests to use asserts from Junit 5 API. Contributed by Sampath Kumar Krishnasamy (sampathkumar.krishnasamykuppusamy at aexp.com)</li>
+  
+<li>
+<a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=65983">
+      Bug
+      65983</a>
+    -
+  <a href="https://github.com/apache/jmeter/pull/707">
+      Pull request #707</a>
+    -
+  Use current screenshot for save-to-file listener in documentation. Based on patch by NaveenKumar Namachivayam (catch.nkn at gmail.com)</li>
+  
+<li>
+<a href="https://github.com/apache/jmeter/pull/708">
+      Pull request #708</a>
+    -
+  Make errorprone happier. Based on patch by Wilson Kurniawan (wilson at visenze.com)&gt;</li>
+  
+<li>Updated Rhino JavaScript to 1.7.14 (from 1.7.13)</li>
 
 </ul>
 
@@ -1036,6 +1062,10 @@ however, the profile can't be updated while the test is running.
 <li>Ji Hun (jihunkimkw at gmail.com)</li>
   
 <li>Peter Paul Bakker (peter.paul.bakker at stokpop.nl)</li>
+  
+<li>NaveenKumar Namachivayam (catch.nkn at gmail.com)</li>
+  
+<li>Wilson Kurniawan (wilson at visenze.com)</li>
 
 </ul>
 
@@ -1146,7 +1176,7 @@ With Java 15 the JavaScript implementation <a href="https://openjdk.java.net/jep
     
 <dt>Use Mozilla Rhino</dt>
     
-<dd>Copy <a href="https://github.com/mozilla/rhino/releases/download/Rhino1_7_13_Release/rhino-engine-1.7.13.jar">rhino-engine-1.7.13.jar</a> into <span class="code">$JMETER_HOME/lib/ext</span>.</dd>
+<dd>Copy <a href="https://github.com/mozilla/rhino/releases/download/Rhino1_7_14_Release/rhino-engine-1.7.14.jar">rhino-engine-1.7.14.jar</a> into <span class="code">$JMETER_HOME/lib/ext</span>.</dd>
     
 <dt>Use OpenJDK Nashorn</dt>
     
