@@ -2,14 +2,14 @@
 *****************************************************
 Summary
 -------
-Generated at: 2022-04-27T10:52:42+00:00
+Generated at: 2022-06-10T17:34:33+01:00
 
 Notes: 38
 Binaries: 10
 Archives: 3
-Standards: 1826
+Standards: 1827
 
-Apache Licensed: 1826
+Apache Licensed: 1827
 Generated Documents: 0
 
 JavaDocs are generated, thus a license header is optional.
@@ -1898,6 +1898,7 @@ Archives:
   AL    /src/core/src/main/java/org/apache/jmeter/visualizers/ImageVisualizer.java
   AL    /src/core/src/main/java/org/apache/jmeter/visualizers/Printable.java
   AL    /src/core/src/main/java/org/apache/jmeter/SplashScreen.java
+  AL    /src/core/src/main/java/org/apache/jmeter/JMeterGuiLauncher.kt
   AL    /src/core/src/main/version/org/apache/jmeter/util/JMeterVersion.java
   AL    /settings.gradle.kts
   N     /config/LICENSE
