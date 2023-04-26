@@ -39,10 +39,10 @@ caption {color:blue;text-align:left;}
 Table 1: A snapshot summary of this rat report.
 </caption>
                 <tr>
-                    <td colspan="1" class="notes">Notes: 38</td><td colspan="1" class="binaries">Binaries: 10</td><td colspan="1" class="archives">Archives: 3</td><td colspan="1" class="standards">Standards: 1827</td>
+                    <td colspan="1" class="notes">Notes: 38</td><td colspan="1" class="binaries">Binaries: 10</td><td colspan="1" class="archives">Archives: 3</td><td colspan="1" class="standards">Standards: 1887</td>
                 </tr>
                 <tr>
-                    <td colspan="2" class="licenced">Apache Licensed: 1827</td><td colspan="2" class="generated">Generated Documents: 0</td>
+                    <td colspan="2" class="licenced">Apache Licensed: 1887</td><td colspan="2" class="generated">Generated Documents: 0</td>
                 </tr>
                 <tr>
                     <td colspan="2" class="java_note">Note: JavaDocs are generated and so license header is optional</td><td colspan="2" class="generated_note">Note: Generated files do not require license headers</td>
@@ -207,6 +207,8 @@ Table 1: A snapshot summary of this rat report.
         <br>
           AL         /xdocs/svnindex.xml
         <br>
+          AL         /xdocs/security.xml
+        <br>
           AL         /xdocs/demos/BeanShellAssertion.bsh
         <br>
           AL         /xdocs/stylesheets/printable_project.xml
@@ -221,7 +223,11 @@ Table 1: A snapshot summary of this rat report.
         <br>
           AL         /xdocs/stylesheets/website-style.xsl
         <br>
-          AL         /xdocs/.htaccess
+          AL         /build-logic-commons/gradle-plugin/build.gradle.kts
+        <br>
+          AL         /build-logic-commons/gradle-plugin/src/main/kotlin/build-logic.kotlin-dsl-gradle-plugin.gradle.kts
+        <br>
+          AL         /build-logic-commons/settings.gradle.kts
         <br>
           N         /LICENSE
         <br>
@@ -317,25 +323,97 @@ Table 1: A snapshot summary of this rat report.
         <br>
           AL         /config/license.header.java
         <br>
+          AL         /config/forbidden-apis/forbidden-apis.txt
+        <br>
           N         /NOTICE
         <br>
           AL         /gradle/wrapper/gradle-wrapper.properties
         <br>
-          AL         /buildSrc/build.gradle.kts
+          AL         /build-logic/publishing/build.gradle.kts
         <br>
-          AL         /buildSrc/settings.gradle.kts
+          AL         /build-logic/publishing/src/main/kotlin/build-logic.java-published-library.gradle.kts
         <br>
-          AL         /buildSrc/gradle.properties
+          AL         /build-logic/publishing/src/main/kotlin/build-logic.jvm-published-library.gradle.kts
         <br>
-          AL         /buildSrc/subprojects/batchtest/batchtest.gradle.kts
+          AL         /build-logic/publishing/src/main/kotlin/build-logic.publish-to-central.gradle.kts
         <br>
-          AL         /buildSrc/subprojects/batchtest/src/main/kotlin/org/apache/jmeter/buildtools/batchtest/WriterExtensions.kt
+          AL         /build-logic/publishing/src/main/kotlin/build-logic.java-published-platform.gradle.kts
         <br>
-          AL         /buildSrc/subprojects/batchtest/src/main/kotlin/org/apache/jmeter/buildtools/batchtest/BatchTestServer.kt
+          AL         /build-logic/publishing/src/main/kotlin/build-logic.publish-to-tmp-maven-repo.gradle.kts
         <br>
-          AL         /buildSrc/subprojects/batchtest/src/main/kotlin/org/apache/jmeter/buildtools/batchtest/BatchTest.kt
+          AL         /build-logic/basics/build.gradle.kts
         <br>
-          AL         /buildSrc/subprojects/batchtest/src/main/kotlin/org/apache/jmeter/buildtools/batchtest/BatchtestPlugin.kt
+          AL         /build-logic/basics/src/main/kotlin/build-logic.reproducible-builds.gradle.kts
+        <br>
+          AL         /build-logic/jvm/build.gradle.kts
+        <br>
+          AL         /build-logic/jvm/src/main/kotlin/build-logic.kotlin.gradle.kts
+        <br>
+          AL         /build-logic/jvm/src/main/kotlin/build-logic.java-library.gradle.kts
+        <br>
+          AL         /build-logic/jvm/src/main/kotlin/build-logic.groovy.gradle.kts
+        <br>
+          AL         /build-logic/jvm/src/main/kotlin/build-logic.testing.gradle.kts
+        <br>
+          AL         /build-logic/jvm/src/main/kotlin/build-logic.test-base.gradle.kts
+        <br>
+          AL         /build-logic/jvm/src/main/kotlin/build-logic.test-spock.gradle.kts
+        <br>
+          AL         /build-logic/jvm/src/main/kotlin/build-logic.dokka-javadoc.gradle.kts
+        <br>
+          AL         /build-logic/jvm/src/main/kotlin/build-logic.test-junit5.gradle.kts
+        <br>
+          AL         /build-logic/jvm/src/main/kotlin/build-logic.java.gradle.kts
+        <br>
+          AL         /build-logic/jvm/src/main/kotlin/build-logic.jvm-library.gradle.kts
+        <br>
+          AL         /build-logic/batchtest/build.gradle.kts
+        <br>
+          AL         /build-logic/batchtest/src/main/kotlin/org/apache/jmeter/buildtools/batchtest/WriterExtensions.kt
+        <br>
+          AL         /build-logic/batchtest/src/main/kotlin/org/apache/jmeter/buildtools/batchtest/BatchTestServer.kt
+        <br>
+          AL         /build-logic/batchtest/src/main/kotlin/org/apache/jmeter/buildtools/batchtest/BatchTest.kt
+        <br>
+          AL         /build-logic/batchtest/src/main/kotlin/build-logic.batchtest.gradle.kts
+        <br>
+          AL         /build-logic/verification/build.gradle.kts
+        <br>
+          AL         /build-logic/verification/src/main/kotlin/build-logic.spotbugs.gradle.kts
+        <br>
+          AL         /build-logic/verification/src/main/kotlin/build-logic.forbidden-apis.gradle.kts
+        <br>
+          AL         /build-logic/verification/src/main/kotlin/build-logic.sonarqube-aggregate.gradle.kts
+        <br>
+          AL         /build-logic/verification/src/main/kotlin/jacoco/JacocoAggregateReportSpec.kt
+        <br>
+          AL         /build-logic/verification/src/main/kotlin/jacoco/DefaultJacocoAggregateReportSpec.kt
+        <br>
+          AL         /build-logic/verification/src/main/kotlin/build-logic.jacoco.gradle.kts
+        <br>
+          AL         /build-logic/verification/src/main/kotlin/build-logic.jacoco-aggregate.gradle.kts
+        <br>
+          AL         /build-logic/verification/src/main/kotlin/build-logic.style.gradle.kts
+        <br>
+          AL         /build-logic/verification/src/main/kotlin/build-logic.checkerframework.gradle.kts
+        <br>
+          AL         /build-logic/verification/src/main/kotlin/build-logic.errorprone.gradle.kts
+        <br>
+          AL         /build-logic/verification/src/main/kotlin/build-logic.checkstyle.gradle.kts
+        <br>
+          AL         /build-logic/verification/src/main/kotlin/build-logic.autostyle.gradle.kts
+        <br>
+          AL         /build-logic/build.gradle.kts
+        <br>
+          AL         /build-logic/settings.gradle.kts
+        <br>
+          AL         /build-logic/gradle.properties
+        <br>
+          AL         /build-logic/build-parameters/build.gradle.kts
+        <br>
+          AL         /build-logic/root-build/build.gradle.kts
+        <br>
+          AL         /build-logic/root-build/src/main/kotlin/build-logic.root-build.gradle.kts
         <br>
           AL         /gradlew
         <br>
@@ -476,6 +554,8 @@ Table 1: A snapshot summary of this rat report.
           AL         /src/core/src/test/java/org/apache/jorphan/reflect/TestFunctor.java
         <br>
           AL         /src/core/src/test/java/org/apache/jorphan/TestXMLBuffer.java
+        <br>
+          AL         /src/core/src/test/java/org/apache/jorphan/collections/SearchByClassTest.java
         <br>
           AL         /src/core/src/test/kotlin/org/apache/jmeter/threads/openmodel/TokenizerTest.kt
         <br>
@@ -1739,6 +1819,8 @@ Table 1: A snapshot summary of this rat report.
         <br>
           AL         /src/release/build.gradle.kts
         <br>
+          AL         /src/protocol/junit-sample/build.gradle.kts
+        <br>
           AL         /src/protocol/junit-sample/src/main/java/test/SetupTestFail.java
         <br>
           AL         /src/protocol/junit-sample/src/main/java/test/Junit4AnnotationsTest.java
@@ -1761,6 +1843,8 @@ Table 1: A snapshot summary of this rat report.
         <br>
           AL         /src/protocol/junit-sample/src/main/java/woolfel/DummyTestCase.java
         <br>
+          AL         /src/protocol/ftp/build.gradle.kts
+        <br>
           AL         /src/protocol/ftp/src/test/java/org/apache/jmeter/resources/ResourceKeyUsageTestFtp.java
         <br>
           AL         /src/protocol/ftp/src/main/java/org/apache/jmeter/protocol/ftp/config/gui/FtpConfigGui.java
@@ -1769,11 +1853,15 @@ Table 1: A snapshot summary of this rat report.
         <br>
           AL         /src/protocol/ftp/src/main/java/org/apache/jmeter/protocol/ftp/control/gui/FtpTestSamplerGui.java
         <br>
+          AL         /src/protocol/native/build.gradle.kts
+        <br>
           AL         /src/protocol/native/src/test/java/org/apache/jmeter/resources/ResourceKeyUsageTestNative.java
         <br>
           AL         /src/protocol/native/src/main/java/org/apache/jmeter/protocol/system/gui/SystemSamplerGui.java
         <br>
           AL         /src/protocol/native/src/main/java/org/apache/jmeter/protocol/system/SystemSampler.java
+        <br>
+          AL         /src/protocol/bolt/build.gradle.kts
         <br>
           AL         /src/protocol/bolt/src/test/java/org/apache/jmeter/resources/ResourceKeyUsageTestBolt.java
         <br>
@@ -1795,6 +1883,8 @@ Table 1: A snapshot summary of this rat report.
         <br>
           AL         /src/protocol/bolt/src/main/java/org/apache/jmeter/protocol/bolt/sampler/BoltSamplerBeanInfo.java
         <br>
+          AL         /src/protocol/junit/build.gradle.kts
+        <br>
           AL         /src/protocol/junit/src/test/java/org/apache/jmeter/resources/ResourceKeyUsageTestJUnit.java
         <br>
           AL         /src/protocol/junit/src/main/java/org/apache/jmeter/protocol/java/sampler/JUnitSampler.java
@@ -1802,6 +1892,8 @@ Table 1: A snapshot summary of this rat report.
           AL         /src/protocol/junit/src/main/java/org/apache/jmeter/protocol/java/control/gui/JUnitTestSamplerGui.java
         <br>
           AL         /src/protocol/junit/src/main/java/org/apache/jmeter/protocol/java/control/gui/ClassFilter.java
+        <br>
+          AL         /src/protocol/mail/build.gradle.kts
         <br>
           AL         /src/protocol/mail/src/test/java/org/apache/jmeter/resources/ResourceKeyUsageTestMail.java
         <br>
@@ -1835,6 +1927,8 @@ Table 1: A snapshot summary of this rat report.
         <br>
           AL         /src/protocol/mail/src/main/java/org/apache/jmeter/protocol/smtp/sampler/SmtpSampler.java
         <br>
+          AL         /src/protocol/ldap/build.gradle.kts
+        <br>
           AL         /src/protocol/ldap/src/test/java/org/apache/jmeter/resources/ResourceKeyUsageTestLdap.java
         <br>
           AL         /src/protocol/ldap/src/test/java/org/apache/jmeter/protocol/ldap/config/gui/PackageTest.java
@@ -1861,7 +1955,11 @@ Table 1: A snapshot summary of this rat report.
         <br>
           AL         /src/protocol/ldap/src/main/java/org/apache/jmeter/protocol/ldap/control/gui/LdapExtTestSamplerGui.java
         <br>
+          AL         /src/protocol/java/build.gradle.kts
+        <br>
           AL         /src/protocol/java/src/test/java/org/apache/jmeter/resources/ResourceKeyUsageTestJava.java
+        <br>
+          AL         /src/protocol/java/src/test/java/org/apache/jmeter/protocol/java/sampler/JSR223SamplerTest.java
         <br>
           AL         /src/protocol/java/src/main/resources/org/apache/jmeter/protocol/java/sampler/JSR223SamplerResources_ko.properties
         <br>
@@ -1909,6 +2007,8 @@ Table 1: A snapshot summary of this rat report.
         <br>
           AL         /src/protocol/java/src/main/java/org/apache/jmeter/protocol/java/control/gui/BeanShellSamplerGui.java
         <br>
+          AL         /src/protocol/mongodb/build.gradle.kts
+        <br>
           AL         /src/protocol/mongodb/src/test/java/org/apache/jmeter/resources/ResourceKeyUsageTestMongodb.java
         <br>
           AL         /src/protocol/mongodb/src/main/resources/org/apache/jmeter/protocol/mongodb/config/MongoSourceElementResources.properties
@@ -1940,6 +2040,8 @@ Table 1: A snapshot summary of this rat report.
           AL         /src/protocol/mongodb/src/main/java/org/apache/jmeter/protocol/mongodb/mongo/EvalResultHandler.java
         <br>
           AL         /src/protocol/mongodb/src/main/java/org/apache/jmeter/protocol/mongodb/mongo/MongoDB.java
+        <br>
+          AL         /src/protocol/jdbc/build.gradle.kts
         <br>
           AL         /src/protocol/jdbc/src/test/java/org/apache/jmeter/resources/ResourceKeyUsageTestJdbc.java
         <br>
@@ -2011,6 +2113,8 @@ Table 1: A snapshot summary of this rat report.
         <br>
           AL         /src/protocol/jdbc/src/main/java/org/apache/jmeter/protocol/jdbc/AbstractJDBCTestElement.java
         <br>
+          AL         /src/protocol/tcp/build.gradle.kts
+        <br>
           AL         /src/protocol/tcp/src/test/java/org/apache/jmeter/resources/ResourceKeyUsageTestTcp.java
         <br>
           AL         /src/protocol/tcp/src/test/java/org/apache/jmeter/protocol/tcp/sampler/LengthPrefixedBinaryTCPClientImplTest.java
@@ -2039,7 +2143,7 @@ Table 1: A snapshot summary of this rat report.
         <br>
           AL         /src/protocol/tcp/src/main/java/org/apache/jmeter/protocol/tcp/control/gui/TCPSamplerGui.java
         <br>
-          AL         /src/protocol/build.gradle.kts
+          AL         /src/protocol/http/build.gradle.kts
         <br>
           AL         /src/protocol/http/src/test/java/org/apache/jmeter/resources/ResourceKeyUsageTestHttp.java
         <br>
@@ -2096,6 +2200,8 @@ Table 1: A snapshot summary of this rat report.
           AL         /src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/sampler/TestRedirects.java
         <br>
           AL         /src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/sampler/ParallelResourcesAndIpSource.java
+        <br>
+          AL         /src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/sampler/BoundaryExtractorRedirectsTest.java
         <br>
           AL         /src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/sampler/PostWriterTest.java
         <br>
@@ -2427,6 +2533,12 @@ Table 1: A snapshot summary of this rat report.
         <br>
           AL         /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/control/KerberosManager.java
         <br>
+          AL         /src/protocol/http/src/main/kotlin1/org/apache/jmeter/protocol/http/sampler/JettyHttpClient.kt
+        <br>
+          AL         /src/protocol/http/src/main/kotlin1/org/apache/jmeter/protocol/http/sampler/JettyHttpSubClient.kt
+        <br>
+          AL         /src/protocol/jms/build.gradle.kts
+        <br>
           AL         /src/protocol/jms/src/test/java/org/apache/jmeter/resources/ResourceKeyUsageTestJms.java
         <br>
           AL         /src/protocol/jms/src/test/java/org/apache/jmeter/protocol/jms/sampler/PublisherSamplerTest.java
@@ -2503,6 +2615,8 @@ Table 1: A snapshot summary of this rat report.
         <br>
           AL         /src/testkit/build.gradle.kts
         <br>
+          AL         /src/testkit/src/main/java/org/apache/jmeter/testkit/TestApp.java
+        <br>
           AL         /src/testkit/src/main/java/org/apache/jmeter/testkit/BugId.java
         <br>
           AL         /src/testkit/src/main/java/org/apache/jmeter/testkit/ResourceLocator.java
@@ -2516,6 +2630,8 @@ Table 1: A snapshot summary of this rat report.
           AL         /src/dist-check/src/test/java/org/apache/jmeter/resources/TestPropertiesFiles.java
         <br>
           AL         /src/dist-check/src/test/java/org/apache/jmeter/threads/ThreadGroupLoad.java
+        <br>
+          AL         /src/dist-check/src/test/java/org/apache/jmeter/threads/TestAnchorModifier.java
         <br>
           AL         /src/dist-check/src/test/java/org/apache/jmeter/gui/action/TestLoad.java
         <br>
@@ -3375,8 +3491,6 @@ Table 1: A snapshot summary of this rat report.
         <br>
           AL         /src/components/src/main/java/org/apache/jmeter/validation/ComponentTreeClonerForValidation.java
         <br>
-          AL         /src/build.gradle.kts
-        <br>
           AL         /src/examples/build.gradle.kts
         <br>
           AL         /src/examples/src/main/resources/org/apache/jmeter/examples/testbeans/example2/Example2Resources_es.properties
@@ -3406,6 +3520,8 @@ Table 1: A snapshot summary of this rat report.
           AL         /src/examples/src/main/java/org/apache/jmeter/examples/sampler/gui/ExampleSamplerGui.java
         <br>
           AL         /src/i18nedit.properties
+        <br>
+          AL         /src/bom-thirdparty/build.gradle.kts
         <br>
           AL         /src/functions/build.gradle.kts
         <br>
@@ -3635,6 +3751,8 @@ Table 1: A snapshot summary of this rat report.
         <br>
           AL         /src/jorphan/src/test/java/org/apache/jorphan/exec/TestKeyToolUtils.java
         <br>
+          AL         /src/jorphan/src/test/java/org/apache/jorphan/collections/CopyOnWriteMapTest.java
+        <br>
           AL         /src/jorphan/src/test/java/org/apache/jorphan/collections/PackageTest.java
         <br>
           AL         /src/jorphan/src/test/groovy/org/apache/jorphan/util/ConverterSpec.groovy
@@ -3790,6 +3908,8 @@ Table 1: A snapshot summary of this rat report.
           AL         /src/jorphan/src/main/java/org/apache/jorphan/collections/HashTree.java
         <br>
           AL         /src/jorphan/src/main/java/org/apache/jorphan/collections/HashTreeTraverser.java
+        <br>
+          AL         /src/jorphan/src/main/java/org/apache/jorphan/collections/CopyOnWriteMap.java
         <br>
           AL         /src/jorphan/src/main/java/org/apache/jorphan/logging/LoggingManager.java
         <br>

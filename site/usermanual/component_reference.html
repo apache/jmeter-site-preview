@@ -129,7 +129,7 @@
                             <a href="../issues.html">Issue Tracking</a>
                         </li>
                         <li>
-                            <a href="https://www.apache.org/security/">Security</a>
+                            <a href="../security.html">Security</a>
                         </li>
                         <li>
                             <a href="../mail.html">Mailing Lists</a>
@@ -158,6 +158,9 @@
                         </li>
                         <li>
                             <a href="https://www.apache.org/foundation/getinvolved.html">Get Involved in the ASF</a>
+                        </li>
+                        <li>
+                            <a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a>
                         </li>
                         <li>
                             <a href="https://www.apache.org/foundation/sponsorship.html">Sponsorship</a>
@@ -13006,9 +13009,12 @@ pattern. You can attach multiple assertions to any controller for additional fle
                                                 HTTP Responses with statuses in the <span class="code">4xx</span> and <span class="code">5xx</span> ranges are normally
                 regarded as unsuccessful.
                 The "<span class="code">Ignore status</span>" checkbox can be used to set the status successful before performing further checks.
-                Note that this will have the effect of clearing any previous assertion failures,
-                so make sure that this is only set on the first assertion.
-        
+                
+                                <div class="clear"></div>
+                                <div class="note">Note that this will have the effect of clearing any previous assertion failures,
+                so make sure that this is only set on the first assertion.</div>
+                                <div class="clear"></div>
+                                        
                             </div>
                             <div class="required req-true">Yes</div>
                         </div>
@@ -18269,56 +18275,132 @@ See <a href="get-started.html#classpath">JMeter's Classpath</a> and
                             
                         <p>
                             The load profile consists of a sequence of constant, increasing or decreasing load.
-       The following commands are available:
+       The basic configuration is <span class="code">rate(1/sec) random_arrivals(2 min) rate(3/sec)</span> which means the load will increase linearly
+        from one request per second to three requests per second during a period of two-minutes.
+       If you omit rate at the end, then it will be set to the same value as that from the start. For example,
+        <span class="code">rate(1/sec) random_arrivals(2 min)</span> is exactly the same as <span class="code">rate(1/sec) random_arrivals(2 min) rate(1/sec)</span>.
+       That is why <span class="code">rate(1/sec) random_arrivals(2 min) random_arrivals(3 min) rate(4/sec)</span> is exactly the same as
+        <span class="code">rate(1/sec) random_arrivals(2 min) rate(1/sec) random_arrivals(3 min) rate(4/sec)</span>, so the load is one request per second during the first two minutes,
+        after which it increases linearly from one request per second to four requests per second during three minutes.
+    
+                        </p>
+                            
+                        <p>
+                            Here are examples for using the schedule:
         
-                            <ul>
+                            <dl>
                                             
-                                <li>
-                                    <span class="code">rate(&lt;number&gt;/sec)</span> &mdash; configures target load rate.
+                                <dt>
+                                    <span class="code">rate(10/sec) random_arrivals(1 min) rate(10/sec)</span>
+                                </dt>
+                                            
+                                <dd>constant load rate of ten requests per second during one minute</dd>
+                                            
+                                <dt>
+                                    <span class="code">rate(0) random_arrivals(1 min) rate(10/sec)</span>
+                                </dt>
+                                            
+                                <dd>linearly increase the load from zero requests per second to ten requests per second during one minute</dd>
+                                            
+                                <dt>
+                                    <span class="code">rate(0) random_arrivals(1 min) rate(10/sec) random_arrivals(1 min) rate(10/sec) random_arrivals(1 min) rate(0)</span>
+                                </dt>
+                                            
+                                <dd>linearly increase the load from zero requests per second to ten requests per second during one minute, then hold the load during one minute,
+                then linearly decrease the load from ten requests per second to zero during one minute</dd>
+                                            
+                                <dt>
+                                    <span class="code">rate(10) random_arrivals(1 min) rate(10/sec) random_arrivals(1 min) rate(10/sec) random_arrivals(1 min) rate(0)</span>
+                                </dt>
+                                            
+                                <dd>linearly increase the load from zero requests per second to ten requests per second during one minute, then hold the load during one minute,
+                then linearly decrease the load from ten requests per second to zero requests per second during one minute</dd>
+                                            
+                                <dt>
+                                    <span class="code">rate(10) random_arrivals(1 min) pause(2 sec) random_arrivals(1 min)</span>
+                                </dt>
+                                            
+                                <dd>run with constant load of ten requests per second during one minute, then make two second pause, then resume the load of ten requests per second for one minute</dd>
+                                        
+                            </dl>
+                                
+                        </p>
+                            
+                        <p>
+                            The following commands are available:
+        
+                            <dl>
+                                            
+                                <dt>
+                                    <span class="code">rate(&lt;number&gt;/sec)</span>
+                                </dt>
+                                            
+                                <dd>
+                                    configures target load rate.
                 The following time units are supported: <span class="code">ms</span>, <span class="code">sec</span>, <span class="code">min</span>, <span class="code">hour</span>, <span class="code">day</span>.
                 You can omit time unit in case the rate is 0: <span class="code">rate(0)</span>
-                                </li>
+            
+                                </dd>
                                             
-                                <li>
-                                    <span class="code">random_arrivals(&lt;number&gt; sec)</span> &mdash; configures random arrivals schedule with the given duration.
+                                <dt>
+                                    <span class="code">random_arrivals(&lt;number&gt; sec)</span>
+                                </dt>
+                                            
+                                <dd>
+                                    configures random arrivals schedule with the given duration.
                 The starting load rate is configured before <span class="code">random_arrivals</span>, and the finish load rate is configured after <span class="code">random_arrivals</span>.
-                For example, 10 minute test from 5/sec at the beginning till 15/sec at the end could be configured as <span class="code">rate(5/sec) random_arrivals(10 min) rate(15/sec)</span>.
+                For example, 10 minute test from five requests per second at the beginning to fifteen request per second at the end could be configured as <span class="code">rate(5/sec) random_arrivals(10 min) rate(15/sec)</span>.
                 
                                     <br>
-                                    The implicit rate at the beginning of the test is 0. If the finish rate is not provided (or if several <span class="code">random_arrivals</span> steps go one after another),
+                                    The implicit rate at the beginning of the test is <span class="code">0</span>. If the finish rate is not provided (or if several <span class="code">random_arrivals</span> steps go one after another),
                 then the load is constant. For instance, <span class="code">rate(3/sec) random_arrivals(1 min) random_arrivals(2 min) rate(6/sec)</span> configures
-                constant rate of 3/sec for the first 1 minute, and then the load increases from 3/sec till 6/sec during the next 2 minutes.
+                constant rate of three requests per second for the first minute, and then the load increases from three requests per second to six requests per second during the next two minutes.
                 The time units are the same as in <span class="code">rate</span>.
             
-                                </li>
+                                </dd>
                                             
-                                <li>
-                                    <span class="code">even_arrivals(&lt;number&gt; sec)</span> &mdash; configures even arrivals (TODO: not implemented yet). For instance, if the desired load
-                is 1/sec, then <span class="code">random_arrivals</span> would lauch samples with exactly 1 second intervals.
-                                </li>
+                                <dt>
+                                    <span class="code">even_arrivals(&lt;number&gt; sec)</span>
+                                </dt>
                                             
-                                <li>
-                                    <span class="code">pause(&lt;number&gt; sec)</span> &mdash; configures a pause for the given duration.
+                                <dd>
+                                    configures even arrivals (TODO: not implemented yet). For instance, if the desired load
+                is one request per second, then <span class="code">random_arrivals</span> would lauch samples with exactly one second intervals.
+            
+                                </dd>
+                                            
+                                <dt>
+                                    <span class="code">pause(&lt;number&gt; sec)</span>
+                                </dt>
+                                            
+                                <dd>
+                                    configures a pause for the given duration.
                 The rate is restored after the pause, so <span class="code">rate(2/sec) random_arrivals(5 sec) pause(5 sec) random_arrivals(5 sec)</span>
-                generates random arrivals with 2/sec rate, then a pause for 5 seconds (no new arrivals), then 5 more seconds with 2/sec rate.
+                generates random arrivals with two requests per second rate, then a pause for five seconds (no new arrivals), then five more seconds with two requests per second rate.
                                     <br>
                                                     Note: <span class="code">pause</span> duration is always honoured, even if all the scenarios are complete, and no new ones will be scheduled.
                 For instance, if you use <span class="code">rate(1/sec) random_arrivals(1 min) pause(1 hour)</span>, the thread group would
-                always last for 61 minutes no matter how much time do individual scenarios take.
+                always last for sixty-one minutes no matter how much time do individual scenarios take.
             
-                                </li>
+                                </dd>
                                             
-                                <li>
-                                    <span class="code">/* Comments */</span> can be used to clarify the schedule or temporary disable some steps. Comments
+                                <dt>
+                                    <span class="code">/* Comments */</span>
+                                </dt>
+                                            
+                                <dd>can be used to clarify the schedule or temporary disable some steps. Comments
                 cannot be nested.
-                                </li>
+            </dd>
                                             
-                                <li>
-                                    <span class="code">// line comments</span> can be used to clarify the schedule or temporary disable some steps.
+                                <dt>
+                                    <span class="code">// line comments</span>
+                                </dt>
+                                            
+                                <dd>can be used to clarify the schedule or temporary disable some steps.
                 Line comment lasts till the end of the line.
-                                </li>
+            </dd>
                                         
-                            </ul>
+                            </dl>
                                 
                         </p>
                             
@@ -18326,7 +18408,7 @@ See <a href="get-started.html#classpath">JMeter's Classpath</a> and
                             The thread groups terminates threads as soon as the schedule ends. In other words, the threads are interrupted
         after all <span class="code">arrivals</span> and <span class="code">pause</span> intervals.
         If you want to let the threads complete safely, consider adding <span class="code">pause(5 min)</span> at the end of the schedule.
-        That will add 5 minutes for the threads to continue.
+        That will add five minutes for the threads to continue.
     
                         </p>
                             

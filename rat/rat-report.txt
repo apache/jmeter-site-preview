@@ -2,14 +2,14 @@
 *****************************************************
 Summary
 -------
-Generated at: 2022-11-04T10:43:34+03:00
+Generated at: 2023-04-26T17:55:20+03:00
 
 Notes: 38
 Binaries: 10
 Archives: 3
-Standards: 1827
+Standards: 1887
 
-Apache Licensed: 1827
+Apache Licensed: 1887
 Generated Documents: 0
 
 JavaDocs are generated, thus a license header is optional.
@@ -97,6 +97,7 @@ Archives:
   AL    /xdocs/localising/index.xml
   AL    /xdocs/changes.xml
   AL    /xdocs/svnindex.xml
+  AL    /xdocs/security.xml
   AL    /xdocs/demos/BeanShellAssertion.bsh
   AL    /xdocs/stylesheets/printable_project.xml
   AL    /xdocs/stylesheets/site.vsl
@@ -104,7 +105,9 @@ Archives:
   AL    /xdocs/stylesheets/site.xsl
   AL    /xdocs/stylesheets/project.xml
   AL    /xdocs/stylesheets/website-style.xsl
-  AL    /xdocs/.htaccess
+  AL    /build-logic-commons/gradle-plugin/build.gradle.kts
+  AL    /build-logic-commons/gradle-plugin/src/main/kotlin/build-logic.kotlin-dsl-gradle-plugin.gradle.kts
+  AL    /build-logic-commons/settings.gradle.kts
   N     /LICENSE
   AL    /bin/log4j2.xml
   AL    /bin/hc.parameters
@@ -152,16 +155,52 @@ Archives:
   AL    /config/checkstyle/checkstyle.xml
   N     /config/LICENSE
   AL    /config/license.header.java
+  AL    /config/forbidden-apis/forbidden-apis.txt
   N     /NOTICE
   AL    /gradle/wrapper/gradle-wrapper.properties
-  AL    /buildSrc/build.gradle.kts
-  AL    /buildSrc/settings.gradle.kts
-  AL    /buildSrc/gradle.properties
-  AL    /buildSrc/subprojects/batchtest/batchtest.gradle.kts
-  AL    /buildSrc/subprojects/batchtest/src/main/kotlin/org/apache/jmeter/buildtools/batchtest/WriterExtensions.kt
-  AL    /buildSrc/subprojects/batchtest/src/main/kotlin/org/apache/jmeter/buildtools/batchtest/BatchTestServer.kt
-  AL    /buildSrc/subprojects/batchtest/src/main/kotlin/org/apache/jmeter/buildtools/batchtest/BatchTest.kt
-  AL    /buildSrc/subprojects/batchtest/src/main/kotlin/org/apache/jmeter/buildtools/batchtest/BatchtestPlugin.kt
+  AL    /build-logic/publishing/build.gradle.kts
+  AL    /build-logic/publishing/src/main/kotlin/build-logic.java-published-library.gradle.kts
+  AL    /build-logic/publishing/src/main/kotlin/build-logic.jvm-published-library.gradle.kts
+  AL    /build-logic/publishing/src/main/kotlin/build-logic.publish-to-central.gradle.kts
+  AL    /build-logic/publishing/src/main/kotlin/build-logic.java-published-platform.gradle.kts
+  AL    /build-logic/publishing/src/main/kotlin/build-logic.publish-to-tmp-maven-repo.gradle.kts
+  AL    /build-logic/basics/build.gradle.kts
+  AL    /build-logic/basics/src/main/kotlin/build-logic.reproducible-builds.gradle.kts
+  AL    /build-logic/jvm/build.gradle.kts
+  AL    /build-logic/jvm/src/main/kotlin/build-logic.kotlin.gradle.kts
+  AL    /build-logic/jvm/src/main/kotlin/build-logic.java-library.gradle.kts
+  AL    /build-logic/jvm/src/main/kotlin/build-logic.groovy.gradle.kts
+  AL    /build-logic/jvm/src/main/kotlin/build-logic.testing.gradle.kts
+  AL    /build-logic/jvm/src/main/kotlin/build-logic.test-base.gradle.kts
+  AL    /build-logic/jvm/src/main/kotlin/build-logic.test-spock.gradle.kts
+  AL    /build-logic/jvm/src/main/kotlin/build-logic.dokka-javadoc.gradle.kts
+  AL    /build-logic/jvm/src/main/kotlin/build-logic.test-junit5.gradle.kts
+  AL    /build-logic/jvm/src/main/kotlin/build-logic.java.gradle.kts
+  AL    /build-logic/jvm/src/main/kotlin/build-logic.jvm-library.gradle.kts
+  AL    /build-logic/batchtest/build.gradle.kts
+  AL    /build-logic/batchtest/src/main/kotlin/org/apache/jmeter/buildtools/batchtest/WriterExtensions.kt
+  AL    /build-logic/batchtest/src/main/kotlin/org/apache/jmeter/buildtools/batchtest/BatchTestServer.kt
+  AL    /build-logic/batchtest/src/main/kotlin/org/apache/jmeter/buildtools/batchtest/BatchTest.kt
+  AL    /build-logic/batchtest/src/main/kotlin/build-logic.batchtest.gradle.kts
+  AL    /build-logic/verification/build.gradle.kts
+  AL    /build-logic/verification/src/main/kotlin/build-logic.spotbugs.gradle.kts
+  AL    /build-logic/verification/src/main/kotlin/build-logic.forbidden-apis.gradle.kts
+  AL    /build-logic/verification/src/main/kotlin/build-logic.sonarqube-aggregate.gradle.kts
+  AL    /build-logic/verification/src/main/kotlin/jacoco/JacocoAggregateReportSpec.kt
+  AL    /build-logic/verification/src/main/kotlin/jacoco/DefaultJacocoAggregateReportSpec.kt
+  AL    /build-logic/verification/src/main/kotlin/build-logic.jacoco.gradle.kts
+  AL    /build-logic/verification/src/main/kotlin/build-logic.jacoco-aggregate.gradle.kts
+  AL    /build-logic/verification/src/main/kotlin/build-logic.style.gradle.kts
+  AL    /build-logic/verification/src/main/kotlin/build-logic.checkerframework.gradle.kts
+  AL    /build-logic/verification/src/main/kotlin/build-logic.errorprone.gradle.kts
+  AL    /build-logic/verification/src/main/kotlin/build-logic.checkstyle.gradle.kts
+  AL    /build-logic/verification/src/main/kotlin/build-logic.autostyle.gradle.kts
+  AL    /build-logic/build.gradle.kts
+  AL    /build-logic/settings.gradle.kts
+  AL    /build-logic/gradle.properties
+  AL    /build-logic/build-parameters/build.gradle.kts
+  AL    /build-logic/root-build/build.gradle.kts
+  AL    /build-logic/root-build/src/main/kotlin/build-logic.root-build.gradle.kts
   AL    /gradlew
   AL    /fb-csv.xsl
   AL    /build.gradle.kts
@@ -232,6 +271,7 @@ Archives:
   AL    /src/core/src/test/java/org/apache/jorphan/test/JMeterSerialTest.java
   AL    /src/core/src/test/java/org/apache/jorphan/reflect/TestFunctor.java
   AL    /src/core/src/test/java/org/apache/jorphan/TestXMLBuffer.java
+  AL    /src/core/src/test/java/org/apache/jorphan/collections/SearchByClassTest.java
   AL    /src/core/src/test/kotlin/org/apache/jmeter/threads/openmodel/TokenizerTest.kt
   AL    /src/core/src/test/kotlin/org/apache/jmeter/threads/openmodel/EvenArrivalsRampTest.kt
   AL    /src/core/src/test/kotlin/org/apache/jmeter/threads/openmodel/PoissonArrivalsRampTest.kt
@@ -863,6 +903,7 @@ Archives:
   AL    /src/dist/build.gradle.kts
   AL    /src/config/build.gradle.kts
   AL    /src/release/build.gradle.kts
+  AL    /src/protocol/junit-sample/build.gradle.kts
   AL    /src/protocol/junit-sample/src/main/java/test/SetupTestFail.java
   AL    /src/protocol/junit-sample/src/main/java/test/Junit4AnnotationsTest.java
   AL    /src/protocol/junit-sample/src/main/java/test/AfterAnnotatedTest.java
@@ -874,13 +915,16 @@ Archives:
   AL    /src/protocol/junit-sample/src/main/java/woolfel/SubDummyTest2.java
   AL    /src/protocol/junit-sample/src/main/java/woolfel/SubDummyTest.java
   AL    /src/protocol/junit-sample/src/main/java/woolfel/DummyTestCase.java
+  AL    /src/protocol/ftp/build.gradle.kts
   AL    /src/protocol/ftp/src/test/java/org/apache/jmeter/resources/ResourceKeyUsageTestFtp.java
   AL    /src/protocol/ftp/src/main/java/org/apache/jmeter/protocol/ftp/config/gui/FtpConfigGui.java
   AL    /src/protocol/ftp/src/main/java/org/apache/jmeter/protocol/ftp/sampler/FTPSampler.java
   AL    /src/protocol/ftp/src/main/java/org/apache/jmeter/protocol/ftp/control/gui/FtpTestSamplerGui.java
+  AL    /src/protocol/native/build.gradle.kts
   AL    /src/protocol/native/src/test/java/org/apache/jmeter/resources/ResourceKeyUsageTestNative.java
   AL    /src/protocol/native/src/main/java/org/apache/jmeter/protocol/system/gui/SystemSamplerGui.java
   AL    /src/protocol/native/src/main/java/org/apache/jmeter/protocol/system/SystemSampler.java
+  AL    /src/protocol/bolt/build.gradle.kts
   AL    /src/protocol/bolt/src/test/java/org/apache/jmeter/resources/ResourceKeyUsageTestBolt.java
   AL    /src/protocol/bolt/src/test/groovy/org/apache/jmeter/protocol/bolt/sampler/BoltSamplerSpec.groovy
   AL    /src/protocol/bolt/src/main/resources/org/apache/jmeter/protocol/bolt/config/BoltConnectionElementResources.properties
@@ -891,10 +935,12 @@ Archives:
   AL    /src/protocol/bolt/src/main/java/org/apache/jmeter/protocol/bolt/sampler/AbstractBoltTestElement.java
   AL    /src/protocol/bolt/src/main/java/org/apache/jmeter/protocol/bolt/sampler/BoltTestElementBeanInfoSupport.java
   AL    /src/protocol/bolt/src/main/java/org/apache/jmeter/protocol/bolt/sampler/BoltSamplerBeanInfo.java
+  AL    /src/protocol/junit/build.gradle.kts
   AL    /src/protocol/junit/src/test/java/org/apache/jmeter/resources/ResourceKeyUsageTestJUnit.java
   AL    /src/protocol/junit/src/main/java/org/apache/jmeter/protocol/java/sampler/JUnitSampler.java
   AL    /src/protocol/junit/src/main/java/org/apache/jmeter/protocol/java/control/gui/JUnitTestSamplerGui.java
   AL    /src/protocol/junit/src/main/java/org/apache/jmeter/protocol/java/control/gui/ClassFilter.java
+  AL    /src/protocol/mail/build.gradle.kts
   AL    /src/protocol/mail/src/test/java/org/apache/jmeter/resources/ResourceKeyUsageTestMail.java
   AL    /src/protocol/mail/src/test/java/org/apache/jmeter/protocol/mail/sampler/TestMailReaderSampler.java
   AL    /src/protocol/mail/src/main/resources/META-INF/javamail.providers
@@ -911,6 +957,7 @@ Archives:
   AL    /src/protocol/mail/src/main/java/org/apache/jmeter/protocol/smtp/sampler/gui/SmtpSamplerGui.java
   AL    /src/protocol/mail/src/main/java/org/apache/jmeter/protocol/smtp/sampler/gui/SmtpPanel.java
   AL    /src/protocol/mail/src/main/java/org/apache/jmeter/protocol/smtp/sampler/SmtpSampler.java
+  AL    /src/protocol/ldap/build.gradle.kts
   AL    /src/protocol/ldap/src/test/java/org/apache/jmeter/resources/ResourceKeyUsageTestLdap.java
   AL    /src/protocol/ldap/src/test/java/org/apache/jmeter/protocol/ldap/config/gui/PackageTest.java
   AL    /src/protocol/ldap/src/main/java/org/apache/jmeter/protocol/ldap/config/gui/LdapExtConfigGui.java
@@ -924,7 +971,9 @@ Archives:
   AL    /src/protocol/ldap/src/main/java/org/apache/jmeter/protocol/ldap/sampler/LdapExtClient.java
   AL    /src/protocol/ldap/src/main/java/org/apache/jmeter/protocol/ldap/control/gui/LdapTestSamplerGui.java
   AL    /src/protocol/ldap/src/main/java/org/apache/jmeter/protocol/ldap/control/gui/LdapExtTestSamplerGui.java
+  AL    /src/protocol/java/build.gradle.kts
   AL    /src/protocol/java/src/test/java/org/apache/jmeter/resources/ResourceKeyUsageTestJava.java
+  AL    /src/protocol/java/src/test/java/org/apache/jmeter/protocol/java/sampler/JSR223SamplerTest.java
   AL    /src/protocol/java/src/main/resources/org/apache/jmeter/protocol/java/sampler/JSR223SamplerResources_ko.properties
   AL    /src/protocol/java/src/main/resources/org/apache/jmeter/protocol/java/sampler/JSR223SamplerResources_zh_CN.properties
   AL    /src/protocol/java/src/main/resources/org/apache/jmeter/protocol/java/sampler/JSR223SamplerResources_fr.properties
@@ -948,6 +997,7 @@ Archives:
   AL    /src/protocol/java/src/main/java/org/apache/jmeter/protocol/java/sampler/JavaSampler.java
   AL    /src/protocol/java/src/main/java/org/apache/jmeter/protocol/java/control/gui/JavaTestSamplerGui.java
   AL    /src/protocol/java/src/main/java/org/apache/jmeter/protocol/java/control/gui/BeanShellSamplerGui.java
+  AL    /src/protocol/mongodb/build.gradle.kts
   AL    /src/protocol/mongodb/src/test/java/org/apache/jmeter/resources/ResourceKeyUsageTestMongodb.java
   AL    /src/protocol/mongodb/src/main/resources/org/apache/jmeter/protocol/mongodb/config/MongoSourceElementResources.properties
   AL    /src/protocol/mongodb/src/main/resources/org/apache/jmeter/protocol/mongodb/config/MongoSourceElementResources_ko.properties
@@ -964,6 +1014,7 @@ Archives:
   AL    /src/protocol/mongodb/src/main/java/org/apache/jmeter/protocol/mongodb/mongo/MongoUtils.java
   AL    /src/protocol/mongodb/src/main/java/org/apache/jmeter/protocol/mongodb/mongo/EvalResultHandler.java
   AL    /src/protocol/mongodb/src/main/java/org/apache/jmeter/protocol/mongodb/mongo/MongoDB.java
+  AL    /src/protocol/jdbc/build.gradle.kts
   AL    /src/protocol/jdbc/src/test/java/org/apache/jmeter/resources/ResourceKeyUsageTestJdbc.java
   AL    /src/protocol/jdbc/src/test/groovy/org/apache/jmeter/protocol/jdbc/sampler/JDBCSamplerSpec.groovy
   AL    /src/protocol/jdbc/src/main/resources/org/apache/jmeter/protocol/jdbc/config/DataSourceElementResources_zh_TW.properties
@@ -999,6 +1050,7 @@ Archives:
   AL    /src/protocol/jdbc/src/main/java/org/apache/jmeter/protocol/jdbc/sampler/JDBCSamplerBeanInfo.java
   AL    /src/protocol/jdbc/src/main/java/org/apache/jmeter/protocol/jdbc/sampler/JDBCSampler.java
   AL    /src/protocol/jdbc/src/main/java/org/apache/jmeter/protocol/jdbc/AbstractJDBCTestElement.java
+  AL    /src/protocol/tcp/build.gradle.kts
   AL    /src/protocol/tcp/src/test/java/org/apache/jmeter/resources/ResourceKeyUsageTestTcp.java
   AL    /src/protocol/tcp/src/test/java/org/apache/jmeter/protocol/tcp/sampler/LengthPrefixedBinaryTCPClientImplTest.java
   AL    /src/protocol/tcp/src/test/java/org/apache/jmeter/protocol/tcp/sampler/BinaryTCPClientImplTest.java
@@ -1013,7 +1065,7 @@ Archives:
   AL    /src/protocol/tcp/src/main/java/org/apache/jmeter/protocol/tcp/sampler/AbstractTCPClient.java
   AL    /src/protocol/tcp/src/main/java/org/apache/jmeter/protocol/tcp/sampler/TCPClientDecorator.java
   AL    /src/protocol/tcp/src/main/java/org/apache/jmeter/protocol/tcp/control/gui/TCPSamplerGui.java
-  AL    /src/protocol/build.gradle.kts
+  AL    /src/protocol/http/build.gradle.kts
   AL    /src/protocol/http/src/test/java/org/apache/jmeter/resources/ResourceKeyUsageTestHttp.java
   AL    /src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/proxy/TestHttpRequestHdr.java
   AL    /src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/proxy/TestProxyControl.java
@@ -1042,6 +1094,7 @@ Archives:
   AL    /src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/sampler/ResultAsString.java
   AL    /src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/sampler/TestRedirects.java
   AL    /src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/sampler/ParallelResourcesAndIpSource.java
+  AL    /src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/sampler/BoundaryExtractorRedirectsTest.java
   AL    /src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/sampler/PostWriterTest.java
   AL    /src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/sampler/TestHttpWebdav.java
   AL    /src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/sampler/TestSerializedHTTPSampler.java
@@ -1207,6 +1260,9 @@ Archives:
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/control/DelegatingSPNegoScheme.java
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/control/DNSCacheManager.java
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/control/KerberosManager.java
+  AL    /src/protocol/http/src/main/kotlin1/org/apache/jmeter/protocol/http/sampler/JettyHttpClient.kt
+  AL    /src/protocol/http/src/main/kotlin1/org/apache/jmeter/protocol/http/sampler/JettyHttpSubClient.kt
+  AL    /src/protocol/jms/build.gradle.kts
   AL    /src/protocol/jms/src/test/java/org/apache/jmeter/resources/ResourceKeyUsageTestJms.java
   AL    /src/protocol/jms/src/test/java/org/apache/jmeter/protocol/jms/sampler/PublisherSamplerTest.java
   AL    /src/protocol/jms/src/test/java/org/apache/jmeter/protocol/jms/sampler/render/TextMessageRendererTest.java
@@ -1245,6 +1301,7 @@ Archives:
   AL    /src/protocol/jms/src/main/java/org/apache/jmeter/protocol/jms/control/gui/JMSPublisherGui.java
   AL    /src/protocol/jms/src/main/java/org/apache/jmeter/protocol/jms/control/gui/JMSSubscriberGui.java
   AL    /src/testkit/build.gradle.kts
+  AL    /src/testkit/src/main/java/org/apache/jmeter/testkit/TestApp.java
   AL    /src/testkit/src/main/java/org/apache/jmeter/testkit/BugId.java
   AL    /src/testkit/src/main/java/org/apache/jmeter/testkit/ResourceLocator.java
   AL    /src/dist-check/build.gradle.kts
@@ -1252,6 +1309,7 @@ Archives:
   AL    /src/dist-check/src/test/java/org/apache/jmeter/junit/JMeterTest.java
   AL    /src/dist-check/src/test/java/org/apache/jmeter/resources/TestPropertiesFiles.java
   AL    /src/dist-check/src/test/java/org/apache/jmeter/threads/ThreadGroupLoad.java
+  AL    /src/dist-check/src/test/java/org/apache/jmeter/threads/TestAnchorModifier.java
   AL    /src/dist-check/src/test/java/org/apache/jmeter/gui/action/TestLoad.java
   AL    /src/dist-check/src/test/java/org/apache/jmeter/functions/ComponentReferenceFunctionTest.java
   AL    /src/dist-check/src/test/java/org/apache/jmeter/testelement/TestElementTest.java
@@ -1681,7 +1739,6 @@ Archives:
   AL    /src/components/src/main/java/org/apache/jmeter/control/RandomController.java
   AL    /src/components/src/main/java/org/apache/jmeter/control/ModuleController.java
   AL    /src/components/src/main/java/org/apache/jmeter/validation/ComponentTreeClonerForValidation.java
-  AL    /src/build.gradle.kts
   AL    /src/examples/build.gradle.kts
   AL    /src/examples/src/main/resources/org/apache/jmeter/examples/testbeans/example2/Example2Resources_es.properties
   AL    /src/examples/src/main/resources/org/apache/jmeter/examples/testbeans/example2/Example2Resources_tr.properties
@@ -1697,6 +1754,7 @@ Archives:
   AL    /src/examples/src/main/java/org/apache/jmeter/examples/sampler/ExampleSampler.java
   AL    /src/examples/src/main/java/org/apache/jmeter/examples/sampler/gui/ExampleSamplerGui.java
   AL    /src/i18nedit.properties
+  AL    /src/bom-thirdparty/build.gradle.kts
   AL    /src/functions/build.gradle.kts
   AL    /src/functions/src/test/java/org/apache/jmeter/resources/ResourceKeyUsageTestFunctions.java
   AL    /src/functions/src/test/java/org/apache/jmeter/functions/TestSetProperty.java
@@ -1811,6 +1869,7 @@ Archives:
   AL    /src/jorphan/src/test/java/org/apache/jorphan/gui/MinMaxLongRendererTest.java
   AL    /src/jorphan/src/test/java/org/apache/jorphan/gui/TableModelEventBacker.java
   AL    /src/jorphan/src/test/java/org/apache/jorphan/exec/TestKeyToolUtils.java
+  AL    /src/jorphan/src/test/java/org/apache/jorphan/collections/CopyOnWriteMapTest.java
   AL    /src/jorphan/src/test/java/org/apache/jorphan/collections/PackageTest.java
   AL    /src/jorphan/src/test/groovy/org/apache/jorphan/util/ConverterSpec.groovy
   AL    /src/jorphan/src/test/groovy/org/apache/jorphan/io/TextFileSpec.groovy
@@ -1889,6 +1948,7 @@ Archives:
   AL    /src/jorphan/src/main/java/org/apache/jorphan/collections/Data.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/collections/HashTree.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/collections/HashTreeTraverser.java
+  AL    /src/jorphan/src/main/java/org/apache/jorphan/collections/CopyOnWriteMap.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/logging/LoggingManager.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/logging/Slf4jLogkitLogger.java
   AL    /extras/addons.xml
