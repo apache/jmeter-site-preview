@@ -2,14 +2,14 @@
 *****************************************************
 Summary
 -------
-Generated at: 2023-06-23T15:18:31+01:00
+Generated at: 2023-06-29T16:52:29+01:00
 
 Notes: 35
 Binaries: 10
 Archives: 3
-Standards: 1988
+Standards: 1991
 
-Apache Licensed: 1988
+Apache Licensed: 1991
 Generated Documents: 0
 
 JavaDocs are generated, thus a license header is optional.
@@ -1329,6 +1329,7 @@ Archives:
   AL    /src/core/src/test/kotlin/org/apache/jmeter/threads/openmodel/ThreadScheduleTest.kt
   AL    /src/core/src/test/kotlin/org/apache/jmeter/threads/openmodel/TokenizerTest.kt
   AL    /src/core/src/test/kotlin/org/apache/jmeter/treebuilder/TreeBuilderTest.kt
+  AL    /src/core/src/test/kotlin/org/apache/jmeter/gui/AbstractJMeterGuiComponentTest.kt
   AL    /src/core/src/test/kotlin/org/apache/jmeter/dsl/action/DslPrinterTraverserTest.kt
   AL    /src/core/src/test/kotlin/org/apache/jorphan/collections/SearchByClassTest.kt
   AL    /src/core/src/test/java/org/apache/jmeter/testelement/PackageTest.java
@@ -2037,6 +2038,8 @@ Archives:
   AL    /build-logic/settings.gradle.kts
   AL    /build-logic/basics/build.gradle.kts
   AL    /build-logic/basics/src/main/kotlin/build-logic.reproducible-builds.gradle.kts
+  AL    /build-logic/basics/src/main/kotlin/configureToolchain.kt
+  AL    /build-logic/basics/src/main/kotlin/ToolchainProperties.kt
   AL    /build-logic/root-build/build.gradle.kts
   AL    /build-logic/root-build/src/main/kotlin/build-logic.root-build.gradle.kts
   AL    /build-logic/build-parameters/build.gradle.kts
