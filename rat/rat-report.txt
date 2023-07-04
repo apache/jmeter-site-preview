@@ -2,14 +2,14 @@
 *****************************************************
 Summary
 -------
-Generated at: 2023-06-29T16:52:29+01:00
+Generated at: 2023-07-04T11:03:39+01:00
 
 Notes: 35
 Binaries: 10
 Archives: 3
-Standards: 1991
+Standards: 1992
 
-Apache Licensed: 1991
+Apache Licensed: 1992
 Generated Documents: 0
 
 JavaDocs are generated, thus a license header is optional.
@@ -184,6 +184,7 @@ Archives:
   AL    /src/dist-check/src/test/groovy/org/apache/jmeter/report/dashboard/ReportGeneratorSpec.groovy
   AL    /src/dist-check/src/test/groovy/org/apache/jmeter/gui/util/MenuFactorySpec.groovy
   AL    /src/dist-check/src/test/groovy/org/apache/jmeter/gui/action/HtmlReportGeneratorSpec.groovy
+  AL    /src/dist-check/src/test/kotlin/org/apache/jmeter/loadsave/IsEnabledNormalizer.kt
   AL    /src/dist-check/src/test/java/org/apache/jmeter/testelement/TestElementTest.java
   AL    /src/dist-check/src/test/java/org/apache/jmeter/functions/ComponentReferenceFunctionTest.java
   AL    /src/dist-check/src/test/java/org/apache/jmeter/save/TestSaveService.java
