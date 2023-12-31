@@ -2,14 +2,14 @@
 *****************************************************
 Summary
 -------
-Generated at: 2023-07-11T13:22:57+01:00
+Generated at: 2023-12-31T10:39:16+01:00
 
 Notes: 35
 Binaries: 10
 Archives: 3
-Standards: 1992
+Standards: 1995
 
-Apache Licensed: 1992
+Apache Licensed: 1995
 Generated Documents: 0
 
 JavaDocs are generated, thus a license header is optional.
@@ -180,11 +180,12 @@ Archives:
   AL    /src/bshclient/build.gradle.kts
   AL    /src/bshclient/src/main/java/org/apache/jmeter/util/BeanShellClient.java
   AL    /src/dist-check/build.gradle.kts
-  AL    /src/dist-check/src/test/groovy/org/apache/jmeter/engine/util/PackageSpec.groovy
-  AL    /src/dist-check/src/test/groovy/org/apache/jmeter/report/dashboard/ReportGeneratorSpec.groovy
-  AL    /src/dist-check/src/test/groovy/org/apache/jmeter/gui/util/MenuFactorySpec.groovy
-  AL    /src/dist-check/src/test/groovy/org/apache/jmeter/gui/action/HtmlReportGeneratorSpec.groovy
+  AL    /src/dist-check/src/test/kotlin/org/apache/jmeter/engine/util/PackageTest.kt
+  AL    /src/dist-check/src/test/kotlin/org/apache/jmeter/report/dashboard/ReportGeneratorTest.kt
   AL    /src/dist-check/src/test/kotlin/org/apache/jmeter/loadsave/IsEnabledNormalizer.kt
+  AL    /src/dist-check/src/test/kotlin/org/apache/jmeter/gui/util/MenuFactoryTest.kt
+  AL    /src/dist-check/src/test/kotlin/org/apache/jmeter/gui/GuiComponentHolder.kt
+  AL    /src/dist-check/src/test/kotlin/org/apache/jmeter/gui/action/HtmlReportGeneratorTest.kt
   AL    /src/dist-check/src/test/java/org/apache/jmeter/testelement/TestElementTest.java
   AL    /src/dist-check/src/test/java/org/apache/jmeter/functions/ComponentReferenceFunctionTest.java
   AL    /src/dist-check/src/test/java/org/apache/jmeter/save/TestSaveService.java
@@ -200,10 +201,11 @@ Archives:
   AL    /src/testkit-wiremock/src/main/java/org/apache/jmeter/wiremock/RequestCountDown.java
   AL    /src/testkit-wiremock/src/main/java/org/apache/jmeter/wiremock/WireMockExtension.java
   AL    /src/functions/build.gradle.kts
-  AL    /src/functions/src/test/groovy/org/apache/jmeter/functions/IterationCounterSpec.groovy
-  AL    /src/functions/src/test/groovy/org/apache/jmeter/functions/gui/FunctionHelperSpec.groovy
-  AL    /src/functions/src/test/groovy/org/apache/jmeter/functions/ChangeCaseSpec.groovy
   AL    /src/functions/src/test/kotlin/org/apache/jmeter/functions/FunctionServicesTest.kt
+  AL    /src/functions/src/test/kotlin/org/apache/jmeter/functions/gui/FunctionHelperTest.kt
+  AL    /src/functions/src/test/kotlin/org/apache/jmeter/functions/ChangeCaseTest.kt
+  AL    /src/functions/src/test/kotlin/org/apache/jmeter/functions/IterationCounterTest.kt
+  AL    /src/functions/src/test/kotlin/org/apache/jmeter/timers/ConstantThroughputTimerKtTest.kt
   AL    /src/functions/src/test/java/org/apache/jmeter/functions/TestTimeFunction.java
   AL    /src/functions/src/test/java/org/apache/jmeter/functions/TestIsVarDefined.java
   AL    /src/functions/src/test/java/org/apache/jmeter/functions/PackageTest.java
@@ -340,10 +342,10 @@ Archives:
   AL    /src/launcher/src/main/java/org/apache/jmeter/util/ShutdownClient.java
   AL    /src/launcher/src/main/java/org/apache/jmeter/DynamicClassLoader.java
   AL    /src/protocol/http/build.gradle.kts
-  AL    /src/protocol/http/src/test/groovy/org/apache/jmeter/protocol/http/util/HTTPUtilsSpec.groovy
-  AL    /src/protocol/http/src/test/groovy/org/apache/jmeter/protocol/http/control/DNSCacheManagerSpec.groovy
   AL    /src/protocol/http/src/test/kotlin/org/apache/jmeter/protocol/http/HttpRequestInterruptTest.kt
+  AL    /src/protocol/http/src/test/kotlin/org/apache/jmeter/protocol/http/util/HTTPUtilsTest.kt
   AL    /src/protocol/http/src/test/kotlin/org/apache/jmeter/protocol/http/util/ConversionUtilsTest.kt
+  AL    /src/protocol/http/src/test/kotlin/org/apache/jmeter/protocol/http/control/DNSCacheManagerTest.kt
   AL    /src/protocol/http/src/test/kotlin/org/apache/jmeter/protocol/http/sampler/HttpSamplerTest.kt
   AL    /src/protocol/http/src/test/kotlin/org/apache/jmeter/protocol/http/sampler/HttpSamplerPrintDslTest.kt
   AL    /src/protocol/http/src/test/java/org/apache/jmeter/testelement/TestHeaderManager.java
@@ -545,6 +547,7 @@ Archives:
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/modifier/gui/RegExUserParametersGui.java
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/modifier/URLRewritingModifier.java
   AL    /src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/modifier/RegExUserParameters.java
+  AL    /src/protocol/http/src/testFixtures/kotlin/org/apache/jmeter/protocol/http/control/HttpMirrorServerExtension.kt
   AL    /src/protocol/ldap/build.gradle.kts
   AL    /src/protocol/ldap/src/test/java/org/apache/jmeter/protocol/ldap/config/gui/PackageTest.java
   AL    /src/protocol/ldap/src/test/java/org/apache/jmeter/resources/ResourceKeyUsageTestLdap.java
@@ -613,7 +616,7 @@ Archives:
   AL    /src/protocol/native/src/main/java/org/apache/jmeter/protocol/system/gui/SystemSamplerGui.java
   AL    /src/protocol/native/src/main/java/org/apache/jmeter/protocol/system/SystemSampler.java
   AL    /src/protocol/bolt/build.gradle.kts
-  AL    /src/protocol/bolt/src/test/groovy/org/apache/jmeter/protocol/bolt/sampler/BoltSamplerSpec.groovy
+  AL    /src/protocol/bolt/src/test/kotlin/org/apache/jmeter/protocol/bolt/sampler/BoltSamplerTest.kt
   AL    /src/protocol/bolt/src/test/java/org/apache/jmeter/resources/ResourceKeyUsageTestBolt.java
   AL    /src/protocol/bolt/src/main/resources/org/apache/jmeter/protocol/bolt/config/BoltConnectionElementResources.properties
   AL    /src/protocol/bolt/src/main/resources/org/apache/jmeter/protocol/bolt/sampler/BoltSamplerResources.properties
@@ -662,7 +665,8 @@ Archives:
   AL    /src/protocol/jms/src/main/java/org/apache/jmeter/protocol/jms/sampler/SubscriberSampler.java
   AL    /src/protocol/jms/src/main/java/org/apache/jmeter/protocol/jms/sampler/FixedQueueExecutor.java
   AL    /src/protocol/jdbc/build.gradle.kts
-  AL    /src/protocol/jdbc/src/test/groovy/org/apache/jmeter/protocol/jdbc/sampler/JDBCSamplerSpec.groovy
+  AL    /src/protocol/jdbc/src/test/kotlin/org/apache/jmeter/protocol/jdbc/sampler/JDBCSamplerTest.kt
+  AL    /src/protocol/jdbc/src/test/kotlin/org/apache/jmeter/protocol/jdbc/AbstractJDBCTestElementExecute.kt
   AL    /src/protocol/jdbc/src/test/java/org/apache/jmeter/resources/ResourceKeyUsageTestJdbc.java
   AL    /src/protocol/jdbc/src/main/resources/org/apache/jmeter/protocol/jdbc/processor/JDBCPreProcessorResources_ko.properties
   AL    /src/protocol/jdbc/src/main/resources/org/apache/jmeter/protocol/jdbc/processor/JDBCPostProcessorResources_fr.properties
@@ -769,23 +773,23 @@ Archives:
   AL    /src/testkit/src/main/java/org/apache/jmeter/testkit/BugId.java
   AL    /src/testkit/src/main/java/org/apache/jmeter/testkit/ResourceLocator.java
   AL    /src/components/build.gradle.kts
-  AL    /src/components/src/test/groovy/org/apache/jmeter/extractor/JoddExtractorSpec.groovy
-  AL    /src/components/src/test/groovy/org/apache/jmeter/extractor/BoundaryExtractorSpec.groovy
-  AL    /src/components/src/test/groovy/org/apache/jmeter/extractor/json/render/RenderAsJsonRendererSpec.groovy
-  AL    /src/components/src/test/groovy/org/apache/jmeter/extractor/json/render/RenderAsJmesPathRendererSpec.groovy
-  AL    /src/components/src/test/groovy/org/apache/jmeter/assertions/MD5HexAssertionSpec.groovy
-  AL    /src/components/src/test/groovy/org/apache/jmeter/assertions/gui/AssertionGuiSpec.groovy
-  AL    /src/components/src/test/groovy/org/apache/jmeter/assertions/CompareAssertionSpec.groovy
-  AL    /src/components/src/test/groovy/org/apache/jmeter/timers/UniformRandomTimerSpec.groovy
-  AL    /src/components/src/test/groovy/org/apache/jmeter/control/RandomOrderControllerSpec.groovy
-  AL    /src/components/src/test/groovy/org/apache/jmeter/control/RunTimeSpec.groovy
-  AL    /src/components/src/test/groovy/org/apache/jmeter/control/ThroughputControllerSpec.groovy
-  AL    /src/components/src/test/groovy/org/apache/jmeter/visualizers/backend/graphite/PickleGraphiteMetricsSenderSpec.groovy
-  AL    /src/components/src/test/groovy/org/apache/jmeter/visualizers/backend/graphite/TextGraphiteMetricsSenderSpec.groovy
-  AL    /src/components/src/test/groovy/org/apache/jmeter/visualizers/backend/influxdb/InfluxdbBackendListenerClientSpec.groovy
-  AL    /src/components/src/test/groovy/org/apache/jmeter/visualizers/backend/influxdb/InfluxDBRawBackendListenerClientSpec.groovy
+  AL    /src/components/src/test/kotlin/org/apache/jmeter/extractor/JoddExtractorTest.kt
+  AL    /src/components/src/test/kotlin/org/apache/jmeter/extractor/json/render/JsonRendererExtensions.kt
+  AL    /src/components/src/test/kotlin/org/apache/jmeter/extractor/json/render/RenderAsJsonRendererTest.kt
+  AL    /src/components/src/test/kotlin/org/apache/jmeter/extractor/json/render/RenderAsJmesPathRendererTest.kt
+  AL    /src/components/src/test/kotlin/org/apache/jmeter/extractor/BoundaryExtractorTest.kt
+  AL    /src/components/src/test/kotlin/org/apache/jmeter/assertions/MD5HexAssertionTest.kt
+  AL    /src/components/src/test/kotlin/org/apache/jmeter/assertions/CompareAssertionTest.kt
   AL    /src/components/src/test/kotlin/org/apache/jmeter/threads/openmodel/OpenModelThreadGroupConfigElementTest.kt
+  AL    /src/components/src/test/kotlin/org/apache/jmeter/timers/UniformRandomTimerTest.kt
+  AL    /src/components/src/test/kotlin/org/apache/jmeter/control/RandomOrderControllerTest.kt
+  AL    /src/components/src/test/kotlin/org/apache/jmeter/control/RunTimeTest.kt
+  AL    /src/components/src/test/kotlin/org/apache/jmeter/control/ThroughputControllerTest.kt
   AL    /src/components/src/test/kotlin/org/apache/jmeter/control/IncludeControllerTest.kt
+  AL    /src/components/src/test/kotlin/org/apache/jmeter/visualizers/backend/graphite/TextGraphiteMetricsSenderTest.kt
+  AL    /src/components/src/test/kotlin/org/apache/jmeter/visualizers/backend/graphite/PickleGraphiteMetricsSenderTest.kt
+  AL    /src/components/src/test/kotlin/org/apache/jmeter/visualizers/backend/influxdb/InfluxDBRawBackendListenerClientTest.kt
+  AL    /src/components/src/test/kotlin/org/apache/jmeter/visualizers/backend/influxdb/InfluxdbBackendListenerClientTest.kt
   AL    /src/components/src/test/java/org/apache/jmeter/extractor/TestHtmlExtractorJSoup.java
   AL    /src/components/src/test/java/org/apache/jmeter/extractor/TestXPathExtractor.java
   AL    /src/components/src/test/java/org/apache/jmeter/extractor/TestRegexExtractor.java
@@ -1194,9 +1198,9 @@ Archives:
   AL    /src/bom-testing/build.gradle.kts
   AL    /src/bom/build.gradle.kts
   AL    /src/jorphan/build.gradle.kts
-  AL    /src/jorphan/src/test/groovy/org/apache/jorphan/io/TextFileSpec.groovy
-  AL    /src/jorphan/src/test/groovy/org/apache/jorphan/util/ConverterSpec.groovy
+  AL    /src/jorphan/src/test/kotlin/org/apache/jorphan/io/TextFileTest.kt
   AL    /src/jorphan/src/test/kotlin/org/apache/jorphan/util/StringUtilitiesTest.kt
+  AL    /src/jorphan/src/test/kotlin/org/apache/jorphan/util/ConverterTest.kt
   AL    /src/jorphan/src/test/kotlin/org/apache/jorphan/collections/IdentityKeyTest.kt
   AL    /src/jorphan/src/test/java/org/apache/commons/cli/avalon/ClutilTestCase.java
   AL    /src/jorphan/src/test/java/org/apache/jorphan/reflect/TestClassTools.java
@@ -1299,30 +1303,30 @@ Archives:
   AL    /src/jorphan/src/main/java/org/apache/jorphan/exec/SystemCommand.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/exec/KeyToolUtils.java
   AL    /src/jorphan/src/main/java/org/apache/jorphan/exec/StreamCopier.java
-  AL    /src/jorphan/src/testFixtures/java/org/apache/jorphan/test/JMeterSerialTest.java
+  AL    /src/jorphan/src/testFixtures/kotlin/org/apache/jmeter/test/gui/DisabledIfHeadless.kt
+  AL    /src/jorphan/src/testFixtures/kotlin/org/apache/jorphan/test/JMeterSerialTest.kt
   AL    /src/core/build.gradle.kts
-  AL    /src/core/src/test/groovy/org/apache/jmeter/testelement/AbstractTestElementSpec.groovy
-  AL    /src/core/src/test/groovy/org/apache/jmeter/engine/util/FunctionParserSpec.groovy
-  AL    /src/core/src/test/groovy/org/apache/jmeter/util/keystore/JmeterKeyStoreSpec.groovy
-  AL    /src/core/src/test/groovy/org/apache/jmeter/services/FileServerSpec.groovy
-  AL    /src/core/src/test/groovy/org/apache/jmeter/report/processor/FieldSampleComparatorSpec.groovy
-  AL    /src/core/src/test/groovy/org/apache/jmeter/report/processor/graph/impl/ResponseTimePercentilesOverTimeGraphConsumerSpec.groovy
-  AL    /src/core/src/test/groovy/org/apache/jmeter/report/processor/ApdexSummaryConsumerSpec.groovy
-  AL    /src/core/src/test/groovy/org/apache/jmeter/report/processor/Top5ErrorsBySamplerConsumerSpec.groovy
-  AL    /src/core/src/test/groovy/org/apache/jmeter/report/processor/Top5ErrorsSummaryDataSpec.groovy
-  AL    /src/core/src/test/groovy/org/apache/jmeter/report/processor/ListResultDataSpec.groovy
-  AL    /src/core/src/test/groovy/org/apache/jmeter/report/core/ConvertersSpec.groovy
-  AL    /src/core/src/test/groovy/org/apache/jmeter/report/core/SampleMetadataParserSpec.groovy
-  AL    /src/core/src/test/groovy/org/apache/jmeter/gui/HtmlReportGUISpec.groovy
   AL    /src/core/src/test/kotlin/org/apache/jmeter/testelement/property/PropertyGroupSchemaTest.kt
   AL    /src/core/src/test/kotlin/org/apache/jmeter/testelement/property/TestElementPropertyIteratorTest.kt
   AL    /src/core/src/test/kotlin/org/apache/jmeter/testelement/property/JMeterElementSchemaTest.kt
   AL    /src/core/src/test/kotlin/org/apache/jmeter/testelement/property/FunctionPropertyTest.kt
   AL    /src/core/src/test/kotlin/org/apache/jmeter/testelement/AbstractTestElementTest.kt
   AL    /src/core/src/test/kotlin/org/apache/jmeter/engine/util/TransformStringsIntoFunctionsTest.kt
+  AL    /src/core/src/test/kotlin/org/apache/jmeter/engine/util/FunctionParserTest.kt
   AL    /src/core/src/test/kotlin/org/apache/jmeter/engine/util/DeepPropertyTransformerTest.kt
   AL    /src/core/src/test/kotlin/org/apache/jmeter/engine/util/UseFunctionsTest.kt
   AL    /src/core/src/test/kotlin/org/apache/jmeter/engine/util/AssertionsKt.kt
+  AL    /src/core/src/test/kotlin/org/apache/jmeter/util/keystore/JmeterKeyStoreTest.kt
+  AL    /src/core/src/test/kotlin/org/apache/jmeter/util/CalculatorTest.kt
+  AL    /src/core/src/test/kotlin/org/apache/jmeter/services/FileServerTest.kt
+  AL    /src/core/src/test/kotlin/org/apache/jmeter/report/processor/Top5ErrorsBySamplerConsumerTest.kt
+  AL    /src/core/src/test/kotlin/org/apache/jmeter/report/processor/Top5ErrorsSummaryDataTest.kt
+  AL    /src/core/src/test/kotlin/org/apache/jmeter/report/processor/ApdexSummaryConsumerTest.kt
+  AL    /src/core/src/test/kotlin/org/apache/jmeter/report/processor/graph/impl/ResponseTimePercentilesOverTimeGraphConsumerTest.kt
+  AL    /src/core/src/test/kotlin/org/apache/jmeter/report/processor/ListResultDataTest.kt
+  AL    /src/core/src/test/kotlin/org/apache/jmeter/report/processor/FieldSampleComparatorTest.kt
+  AL    /src/core/src/test/kotlin/org/apache/jmeter/report/core/ConvertersTest.kt
+  AL    /src/core/src/test/kotlin/org/apache/jmeter/report/core/SampleMetadataParserTest.kt
   AL    /src/core/src/test/kotlin/org/apache/jmeter/threads/openmodel/PoissonArrivalsRampTest.kt
   AL    /src/core/src/test/kotlin/org/apache/jmeter/threads/openmodel/EvenArrivalsRampTest.kt
   AL    /src/core/src/test/kotlin/org/apache/jmeter/threads/openmodel/ThreadsInterruptAtFinishTest.kt
@@ -1365,7 +1369,6 @@ Archives:
   AL    /src/core/src/test/java/org/apache/jmeter/report/core/CsvSampleReaderTest.java
   AL    /src/core/src/test/java/org/apache/jmeter/report/core/SampleMetadataTest.java
   AL    /src/core/src/test/java/org/apache/jmeter/threads/TestUnmodifiableJMeterVariables.java
-  AL    /src/core/src/test/java/org/apache/jmeter/threads/JMeterContextServiceHelper.java
   AL    /src/core/src/test/java/org/apache/jmeter/threads/TestTestCompiler.java
   AL    /src/core/src/test/java/org/apache/jmeter/threads/TestJMeterThread.java
   AL    /src/core/src/test/java/org/apache/jmeter/gui/logging/TestGuiLogEventAppender.java
@@ -1375,7 +1378,6 @@ Archives:
   AL    /src/core/src/test/java/org/apache/jmeter/testbeans/gui/TestBooleanPropertyEditor.java
   AL    /src/core/src/test/java/org/apache/jmeter/testbeans/gui/TestComboStringEditor.java
   AL    /src/core/src/test/java/org/apache/jmeter/config/ArgumentTest.java
-  AL    /src/core/src/test/java/org/apache/jorphan/test/AllTests.java
   AL    /src/core/src/test/java/org/apache/jorphan/reflect/TestFunctor.java
   AL    /src/core/src/test/java/org/apache/jorphan/TestXMLBuffer.java
   AL    /src/core/src/main/resources/org/apache/jmeter/resources/messages_fr.properties
@@ -1441,8 +1443,15 @@ Archives:
   AL    /src/core/src/main/kotlin/org/apache/jmeter/treebuilder/Action.kt
   AL    /src/core/src/main/kotlin/org/apache/jmeter/treebuilder/TreeBuilder.kt
   AL    /src/core/src/main/kotlin/org/apache/jmeter/treebuilder/dsl/TreeBuilders.kt
+  AL    /src/core/src/main/kotlin/org/apache/jmeter/gui/JLabeledFieldBinding.kt
+  AL    /src/core/src/main/kotlin/org/apache/jmeter/gui/JSyntaxTextAreaBinding.kt
   AL    /src/core/src/main/kotlin/org/apache/jmeter/gui/JBooleanPropertyEditor.kt
+  AL    /src/core/src/main/kotlin/org/apache/jmeter/gui/BindingGroup.kt
+  AL    /src/core/src/main/kotlin/org/apache/jmeter/gui/JTextComponentBinding.kt
+  AL    /src/core/src/main/kotlin/org/apache/jmeter/gui/Binding.kt
   AL    /src/core/src/main/kotlin/org/apache/jmeter/gui/action/CopyCodeAction.kt
+  AL    /src/core/src/main/kotlin/org/apache/jmeter/gui/FilePanelEntryBinding.kt
+  AL    /src/core/src/main/kotlin/org/apache/jmeter/gui/JCheckBoxBinding.kt
   AL    /src/core/src/main/kotlin/org/apache/jmeter/control/IfControllerSchema.kt
   AL    /src/core/src/main/kotlin/org/apache/jmeter/control/GenericControllerSchema.kt
   AL    /src/core/src/main/kotlin/org/apache/jmeter/control/TransactionControllerSchema.kt
@@ -2000,7 +2009,6 @@ Archives:
   AL    /src/core/src/jmh/java/org/apache/jmeter/reporters/ResultCollectorBenchmark.java
   AL    /src/core/src/testFixtures/resources/XPathUtilTestXml.xml
   AL    /src/core/src/testFixtures/resources/log4j2.xml
-  AL    /src/core/src/testFixtures/groovy/org/apache/jmeter/junit/spock/JMeterSpec.groovy
   AL    /src/core/src/testFixtures/kotlin/org/apache/jmeter/test/samplers/ThreadSleep.kt
   AL    /src/core/src/testFixtures/kotlin/org/apache/jmeter/test/samplers/CollectSamplesListener.kt
   AL    /src/core/src/testFixtures/kotlin/org/apache/jmeter/test/assertions/executePlanAndCollectEvents.kt
@@ -2011,9 +2019,6 @@ Archives:
   AL    /src/core/src/testFixtures/java/org/apache/jmeter/threads/TestJMeterContextService.java
   AL    /src/core/src/testFixtures/java/org/apache/jmeter/junit/JMeterTestUtils.java
   AL    /src/core/src/testFixtures/java/org/apache/jmeter/junit/stubs/TestSampler.java
-  AL    /src/core/src/testFixtures/java/org/apache/jmeter/junit/JMeterTestCaseJUnit.java
-  AL    /src/core/src/testFixtures/java/org/apache/jmeter/junit/categories/NeedGuiTests.java
-  AL    /src/core/src/testFixtures/java/org/apache/jmeter/junit/categories/ExcludeCategoryFilter.java
   AL    /src/core/src/testFixtures/java/org/apache/jmeter/junit/JMeterTestCase.java
   AL    /settings.gradle.kts
   N     /config/LICENSE
@@ -2063,9 +2068,7 @@ Archives:
   AL    /build-logic/jvm/src/main/kotlin/build-logic.java-library.gradle.kts
   AL    /build-logic/jvm/src/main/kotlin/build-logic.kotlin.gradle.kts
   AL    /build-logic/jvm/src/main/kotlin/build-logic.java.gradle.kts
-  AL    /build-logic/jvm/src/main/kotlin/build-logic.groovy.gradle.kts
   AL    /build-logic/jvm/src/main/kotlin/build-logic.jmh.gradle.kts
-  AL    /build-logic/jvm/src/main/kotlin/build-logic.test-spock.gradle.kts
   AL    /build-logic/jvm/src/main/kotlin/build-logic.jvm-library.gradle.kts
   AL    /build-logic/jvm/src/main/kotlin/build-logic.test-junit5.gradle.kts
   AL    /build-logic/jvm/src/main/kotlin/build-logic.autoservice.gradle.kts
