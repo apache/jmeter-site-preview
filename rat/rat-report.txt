@@ -2,14 +2,14 @@
 *****************************************************
 Summary
 -------
-Generated at: 2023-12-31T10:39:16+01:00
+Generated at: 2024-01-02T16:42:48+01:00
 
 Notes: 35
 Binaries: 10
 Archives: 3
-Standards: 1995
+Standards: 1996
 
-Apache Licensed: 1995
+Apache Licensed: 1996
 Generated Documents: 0
 
 JavaDocs are generated, thus a license header is optional.
@@ -975,6 +975,7 @@ Archives:
   AL    /src/components/src/main/resources/org/apache/jmeter/visualizers/BeanShellListenerResources.properties
   AL    /src/components/src/main/resources/org/apache/jmeter/visualizers/BSFListenerResources_fr.properties
   AL    /src/components/src/main/kotlin/org/apache/jmeter/extractor/RegexExtractorSchema.kt
+  AL    /src/components/src/main/kotlin/org/apache/jmeter/control/IncludeControllerSchema.kt
   AL    /src/components/src/main/kotlin/org/apache/jmeter/sampler/DebugSamplerSchema.kt
   AL    /src/components/src/main/java/org/apache/jmeter/extractor/JoddExtractor.java
   AL    /src/components/src/main/java/org/apache/jmeter/extractor/DebugPostProcessor.java
